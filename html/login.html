@@ -5,7 +5,45 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Comptible" content="IE=edge" />
         <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
         <title>마음책방</title>
     </head>
-    <body></body>
+    <body>
+        <div class="login-background">
+            <div class="login-page">
+                <div class="login-page-left">
+                    <img class="login-img" src="/img/login_logo.png" />
+                </div>
+                <form class="user">
+                    <div class="login-page-right">
+                        <div class="login-id">
+                            <input class="login-id-input" type="text" name="userName" />
+                        </div>
+                        <div class="login-pw">
+                            <input class="login-pw-input" type="password" name="userPassword" />
+                        </div>
+                        <div class="login-button">
+                            <a href="#"><input class="login-btn" type="button" value="로그인" /> </a>
+                        </div>
+                        <div class="make-create-account">
+                            <p class="create-account-msg">
+                                회원이 아니신가요? <a href="#"><u>회원가입하기</u></a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <!-- 팝업창 -->
+                <div class="failed-login-modal">
+                    <div class="failed-login-box">
+                        <div class="failed-login-icon"><i class="fa-solid fa-exclamation"></i></div>
+                        <h3 class="failed-login-main-message">
+                            로그인에 <span style="color: #c54848">실패</span>했습니다
+                        </h3>
+                        <p class="failed-login-sub-message">아이디 또는 비밀번호를 다시 확인해주세요</p>
+                        <a href="login.html"><input class="failed-login-button" type="button" value="확인" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
