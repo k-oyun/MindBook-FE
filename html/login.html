@@ -17,9 +17,11 @@
                 <form class="user">
                     <div class="login-page-right">
                         <div class="login-id">
+                            <p>아이디</p>
                             <input class="login-id-input" type="text" name="userName" />
                         </div>
                         <div class="login-pw">
+                            <p>비밀번호</p>
                             <input class="login-pw-input" type="password" name="userPassword" />
                         </div>
                         <div class="login-button">
@@ -32,18 +34,21 @@
                         </div>
                     </div>
                 </form>
-                <!-- 팝업창 -->
-                <div class="failed-login-modal">
-                    <div class="failed-login-box">
-                        <div class="failed-login-icon"><i class="fa-solid fa-exclamation"></i></div>
-                        <h3 class="failed-login-main-message">
-                            로그인에 <span style="color: #c54848">실패</span>했습니다
-                        </h3>
-                        <p class="failed-login-sub-message">아이디 또는 비밀번호를 다시 확인해주세요</p>
-                        <a href="login.html"><input class="failed-login-button" type="button" value="확인" /></a>
-                    </div>
-                </div>
             </div>
+        </div>
+        <!-- 팝업창 -->
+        <div id="failed-login-modal">
+            <div class="failed-modal-content">
+                <div class="failed-login-icon"><i class="fa-solid fa-exclamation"></i></div>
+
+                <h2>로그인에 <span style="color: #c54848">실패</span>했습니다</h2>
+
+                <p>아이디 또는 비밀번호를 다시 확인해주세요</p>
+
+                <a href="login.html"><button type="button" id="failed-login-button">확인</button></a>
+            </div>
+
+            <div class="failed-login-modal-back"></div>
         </div>
     </body>
 </html>
