@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="/css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Comptible" content="IE=edge" />
+        <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
+        <title>마음책방</title>
+    </head>
+    <body>
+        <div class="create-account-background">
+            <div class="create-account-header">
+                <p>회원가입</p>
+                <img src="/img/nav_logo.png" />
+            </div>
+            <p class="header-addition-msg">
+                회원가입을 위해 아래 내용들을 <span style="font-weight: 600">정확히</span> 입력해주세요.
+            </p>
+            <div class="create-account-main">
+                <div class="user-profile-img">
+                    <img class="user-profile-img-input" src="/img/profile_img.png" />
+                    <input type="file" id="open-file" accept=".jpg, .jpeg, .png" style="display: none" />
+                </div>
+                <div class="open-change-modal">
+                    <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
+                </div>
+                <div class="create-account-id">
+                    <p class="create-account-id-msg">아이디 <span>한글 사용 불가</span></p>
+                    <input class="create-account-id-input" type="text" name="userName" />
+                    <p class="error-create-id">조건에 맞지 않는 아이디입니다.</p>
+                </div>
+                <div class="create-account-nickname">
+                    <p class="create-account-nickname-msg">닉네임</p>
+                    <input class="create-account-nickname-input" type="text" name="userNickName" />
+                    <p class="alert-nickname">추후 변경 불가</p>
+                </div>
+                <div class="create-account-pw">
+                    <p class="create-account-id-pw">비밀번호 <span>한글 제외 8자 이상</span></p>
+                    <input class="create-account-pw-input" type="password" name="userPassword" />
+                    <input class="double-check-pw-input" type="password" name="userPassword" />
+                    <p class="error-create-pw">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
+                </div>
+                <div>
+                    <input class="open-create-account-modal" type="button" value="회원가입" disabled />
+                </div>
+            </div>
+        </div>
+        <!--이미지 변경 팝업창 -->
+        <div id="choose-img-modal">
+            <div class="choose-img-content">
+                <button type="button" id="change-img-button">파일에서 사진 선택</button>
+
+                <button type="button" id="back-basic-img-button">기본이미지로 변경</button>
+
+                <a href="create_account.html"><button type="button" id="no-change-button">취소</button></a>
+            </div>
+
+            <div class="choose-img-modal-back"></div>
+        </div>
+        <!-- 회원가입 완료 팝업창 -->
+        <div id="create-account-modal">
+            <div class="create-account-content">
+                <div class="create-account-icon"><img src="/img/nav_logo.png" /></div>
+
+                <p>회원가입이 완료되었습니다&#33;</p>
+
+                <a href="login.html"><button type="button" id="create-account-button">로그인하기</button></a>
+            </div>
+
+            <div class="create-account-modal-back"></div>
+        </div>
+    </body>
+</html>
