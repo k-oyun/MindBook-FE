@@ -9,9 +9,9 @@
         <title>마음책방</title>
     </head>
     <body>
-        <div class="create-account-background">
+        <div class="create-account-body">
             <div class="create-account-header">
-                <p>회원가입</p>
+                <span>회원가입</span>
                 <img src="/img/nav_logo.png" />
             </div>
             <p class="header-addition-msg">
@@ -25,21 +25,43 @@
                 <div class="open-change-modal">
                     <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
                 </div>
+
                 <div class="create-account-id">
-                    <p class="create-account-id-msg">아이디 <span>한글 사용 불가</span></p>
-                    <input class="create-account-id-input" type="text" name="userName" />
-                    <p class="error-create-id">조건에 맞지 않는 아이디입니다.</p>
+                    <div class="create-account-message">
+                        <span class="create-account-id-msg">아이디</span>
+                        <span class="create-account-id-submsg">한글 사용 불가</span>
+                    </div>
+                    <div><input class="create-account-id-input" type="text" name="userName" /></div>
+                    <div class="create-account-message">
+                        <p class="error-create-id">조건에 맞지 않는 아이디입니다.</p>
+                    </div>
                 </div>
                 <div class="create-account-nickname">
-                    <p class="create-account-nickname-msg">닉네임</p>
+                    <div class="create-account-message">
+                        <p class="create-account-nickname-msg">닉네임</p>
+                    </div>
                     <input class="create-account-nickname-input" type="text" name="userNickName" />
-                    <p class="alert-nickname">추후 변경 불가</p>
+                    <div class="create-account-message">
+                        <p class="alert-nickname">추후 변경 불가</p>
+                    </div>
                 </div>
                 <div class="create-account-pw">
-                    <p class="create-account-id-pw">비밀번호 <span>한글 제외 8자 이상</span></p>
-                    <input class="create-account-pw-input" type="password" name="userPassword" />
-                    <input class="double-check-pw-input" type="password" name="userPassword" />
-                    <p class="error-create-pw">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
+                    <div class="create-account-message">
+                        <span class="create-account-pw-msg">비밀번호</span>
+                        <span class="create-account-pw-submsg">한글 제외 8자 이상</span>
+                    </div>
+                    <div><input class="create-account-pw-input" type="password" name="userPassword" /></div>
+                    <div>
+                        <input
+                            class="double-check-pw-input"
+                            type="password"
+                            name="userPassword"
+                            placeholder="비밀번호 확인"
+                        />
+                    </div>
+                    <div class="create-account-message">
+                        <p class="error-create-pw">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
+                    </div>
                 </div>
                 <div>
                     <input class="open-create-account-modal" type="button" value="회원가입" disabled />
