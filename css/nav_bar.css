@@ -40,5 +40,14 @@
     margin-left: auto;
     padding-right: 60px;
     align-items: center;
+}
+
+.logout-button {
+    border: 0;
+    background-color: transparent;
     cursor: pointer;
+}
+
+.logout-button:hover {
+    opacity: 0.8;
 }
