@@ -1,1 +1,43 @@
+* {
+    box-sizing: border-box;
+}
 
+.top-bar {
+    position: fixed;
+    height: 90px;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-bottom: 1px solid #c7c4c4;
+    background-color: white;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.nav-bar {
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.logo {
+    margin-right: 25px;
+    height: 40px;
+}
+
+.nav-icon {
+    display: flex;
+    margin-left: auto;
+    padding-right: 60px;
+    align-items: center;
+}
+
+.gap {
+    width: 30px;
+}
