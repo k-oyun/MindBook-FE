@@ -1,16 +1,167 @@
-.create-account-background {
-    width: 100vw;
-    height: 100vh;
-    background-color: #fcf7ee;
+.create-account-body {
+    padding-top: 20px;
+}
+
+.create-account-header {
+    width: 80%;
+    height: 75px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-bottom-color: #a8a8a8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-account-header span {
+    font-weight: 700;
+    font-size: 48px;
+    display: flex;
+    align-items: end;
+}
+
+.header-addition-msg {
+    padding-top: 13px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.create-account-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.user-profile-img {
+    position: relative;
+    z-index: 1;
+}
+
+#open-change-modal-btn {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    z-index: 2;
+    padding-left: 38px;
+    margin-top: -52px;
+    cursor: pointer;
+}
+
+#open-change-modal-btn:hover {
+    opacity: 0.8;
+}
+
+/* 아이디 */
+.create-account-id {
+    padding-top: 60px;
+}
+
+.create-account-message {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .create-account-id-msg {
     font-size: 20px;
+    font-weight: 600;
 }
 
-.create-account-id-msg span {
-    font-size: 15px;
-    text-align: center;
+.create-account-id-submsg {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 20px;
+}
+
+.create-account-id-input {
+    width: 595px;
+    height: 68px;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.error-create-id {
+    font-size: 16px;
+    color: #c54848;
+}
+
+/* 닉네임 */
+.create-account-nickname {
+    padding-top: 10px;
+}
+
+.create-account-nickname-msg {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.create-account-nickname-input {
+    width: 595px;
+    height: 68px;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.alert-nickname {
+    font-size: 16px;
+    color: #999999;
+}
+
+/* 비밀번호 */
+.create-account-pw {
+    padding-top: 10px;
+}
+
+.create-account-pw-msg {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.create-account-pw-submsg {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 20px;
+}
+
+.create-account-pw-input {
+    width: 595px;
+    height: 68px;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.double-check-pw-input {
+    width: 595px;
+    height: 68px;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+
+.error-create-pw {
+    font-size: 16px;
+    color: #c54848;
+}
+
+.open-create-account-modal {
+    margin: 50px 0;
+    background-color: #323047;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    width: 175px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.open-create-account-modal:hover {
+    opacity: 0.8;
 }
 
 /* 이미지 변경 팝업창 */
