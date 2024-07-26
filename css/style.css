@@ -6,6 +6,8 @@
 
 @import 'nav_bar.css';
 
+@import 'mypage.css';
+
 body {
     background-color: #fcf7ee;
 }
