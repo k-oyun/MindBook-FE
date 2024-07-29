@@ -37,5 +37,31 @@
         <div class="mypage-main">
             <div class="mypage-container"></div>
         </div>
+        <!-- 탈퇴 재확인 팝업창 -->
+        <div id="create-account-modal">
+            <div class="create-account-content">
+                <div class="create-account-icon"><img src="/img/nav_logo.png" /></div>
+
+                <p>회원가입이 완료되었습니다&#33;</p>
+
+                <a href="login.html"><button type="button" id="create-account-button">로그인하기</button></a>
+            </div>
+
+            <div class="create-account-modal-back"></div>
+        </div>
+        <!--존재하지 않는 회원 팝업창 -->
+        <div id="failed-login-modal">
+            <div class="failed-modal-content">
+                <div class="failed-login-icon"><i class="fa-solid fa-exclamation"></i></div>
+
+                <h2><span style="color: #c54848">존재하지 않는</span> 회원정보입니다.</h2>
+
+                <p>비밀번호를 다시 확인해주세요</p>
+
+                <a href="/html/withdrawal.html"><button type="button" id="failed-login-button">확인</button></a>
+            </div>
+
+            <div class="failed-login-modal-back"></div>
+        </div>
     </body>
 </html>

@@ -10,6 +10,8 @@
 
 @import "main.css";
 
+@import 'withdrawal.css';
+
 body {
   background-color: #fcf7ee;
 }

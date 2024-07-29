@@ -1,96 +1,64 @@
-.login-page {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 80%;
-}
-
-.login-page-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 8%;
-    margin-left: 10%;
-}
-
-.login-img {
-    width: 90%;
-    height: 90%;
-}
-
-.login-page-right {
-    display: flex;
-    flex-direction: column;
-    width: 265%;
-    height: 50vh;
-    margin-top: 50%;
-}
-
-.login-id {
+/* 탈퇴 재확인 팝업창 */
+#create-account-modal {
+    /* display: none; */
+    position: relative;
     width: 100%;
-    height: 30%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
 }
-.login-id p {
-    font-size: 1.3rem;
+
+.create-account-icon {
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+
+#create-account-modal p {
+    font-size: 17px;
     font-weight: 600;
-    margin-bottom: 2%;
+    margin-bottom: 40px;
 }
 
-.login-id-input {
-    border-width: 0;
-    width: 100%;
-    height: 55%;
-    border-radius: 10px;
-}
-
-.login-pw {
-    width: 100%;
-    height: 30%;
-}
-
-.login-pw p {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 2%;
-}
-
-.login-pw-input {
-    border-width: 0;
-    width: 100%;
-    height: 55%;
-    border-radius: 10px;
-}
-
-.login-btn {
-    width: 38%;
-    height: 130%;
+#create-account-modal button {
+    display: inline-block;
+    width: 110px;
+    height: 42px;
+    border-radius: 5px;
     color: #fff;
     background-color: #323047;
+    font-size: 14px;
     font-weight: 800;
-    font-size: 1.4rem;
-    border-radius: 5px;
-    margin-bottom: 10px;
     cursor: pointer;
-    margin-left: 30%;
 }
 
-.login-btn:hover {
+#create-account-modal button:hover {
     opacity: 0.8;
 }
 
-.create-account-msg {
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: #9b9b9b;
-    margin-top: 5%;
-    margin-left: 30%;
+.create-account-content {
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    vertical-align: middle;
+    margin-top: -720px;
+    padding: 20px 10px;
+    background: #fff;
+    border-radius: 10px;
 }
 
-/* 팝업창 */
+.create-account-modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* 회원 팝업창 */
 #failed-login-modal {
-    /* display: none; */
+    display: none;
     position: relative;
     width: 100vw;
     height: 100vh;
