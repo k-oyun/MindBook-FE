@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8d049b55ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>책 추가</title>
+  </head>
+  <body class="body">
+    <div class="top-bar">
+      <div class="logo">
+        <a href="main.html">
+          <img class="nav-logo" src="/img/nav_logo.png" />
+        </a>
+      </div>
+      <div class="nav-bar">
+        <a
+          class="nav-link"
+          style="
+            color: #323047;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-thickness: 6px;
+          "
+          href="#"
+          >책장</a
+        >
+        <a class="nav-link" href="#">회고록</a>
+        <a class="nav-link" href="mypage.html">마이페이지</a>
+      </div>
+      <div class="nav-icon">
+        <button type="button" class="logout-button">
+          <img src="/img/logout.png" />
+        </button>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+
+    <div class="container">
+      <div class="search-book-container">
+        <input
+          type="text"
+          class="search-book"
+          placeholder="추가하고 싶은 책을 검색하세요"
+        />
+        <button class="search-btn">
+          <img src="../img/reading_glass.png" class="reading-glass" />
+        </button>
+      </div>
+      <div class="hidden-container">
+        <div class="search-result-text">
+          '<span class="book-name">구의 증명</span>'<span>에 대한&nbsp;</span>
+          <span class="result-count">15</span><span>개의 검색 결과</span>
+        </div>
+        <div class="search-results">
+          <div class="book">
+            <div class="book-img"></div>
+            <div class="book-info">
+              <p class="book-title">구의 증명</p>
+              <p class="author">최진영</p>
+              <p class="publisher">은행나무</p>
+              <p class="published-date">2015년 03월 30일</p>
+            </div>
+            <button class="add-book-btn">추가</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

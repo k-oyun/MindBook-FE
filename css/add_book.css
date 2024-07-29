@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 요소의 크기 계산 */
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 요소가 화면 전체를 차지하도록 설정 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
+  height: 100vh;
+}
+
+.hidden-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
+  height: 100vh;
+}
+
+.search-book-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  margin-top: 3%;
+  width: 50%;
+  height: 7%;
+}
+
+.search-book {
+  background-color: transparent;
+  width: 90%;
+  border: none;
+  margin-left: 20px;
+  /* background-color: red; */
+  font-size: 1.4rem;
+  font-weight: 540;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.reading-glass {
+  width: 45px;
+  height: 45px;
+}
+
+.search-result-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 5%;
+  margin-top: 1%;
+  font-weight: 600;
+}
+
+.search-results {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: auto;
+}
+
+.book {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+
+.book-img {
+  width: 15%;
+  height: 160px;
+  background-color: blue;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+.book-title {
+  font-size: 1.5em;
+  margin-top: 7%;
+  font-weight: 700;
+  margin-bottom: 30%;
+}
+
+.author {
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+.publisher {
+  font-weight: 700;
+  margin-bottom: 3%;
+}
+.published-date {
+  font-weight: 700;
+}
+
+.add-book-btn {
+  width: 12%;
+  height: 45px;
+  margin-top: 8%;
+  margin-left: 35%;
+  background-color: #323047;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
