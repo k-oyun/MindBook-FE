@@ -3,7 +3,6 @@
 }
 
 .top-bar {
-    position: fixed;
     height: 100px;
     left: 0;
     right: 0;
@@ -11,7 +10,6 @@
     background-color: transparent;
     padding-bottom: 20px;
     z-index: 1;
-    background-color: yellow;
 }
 
 .logo {
