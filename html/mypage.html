@@ -34,6 +34,54 @@
                 <button type="button" class="logout-button"><img src="/img/logout.png" /></button>
             </div>
         </div>
-        <div class="mypage-main"></div>
+        <div class="mypage-main">
+            <div class="mypage-container">
+                <div class="account-date">
+                    <div class="account-date-msg-box">
+                        <img src="/img/말풍선.png" />
+                        <p>
+                            <span id="userNickName"></span> 님이 마음책방에 오신지
+                            <span id="membershipDuration"></span>일 되었어요! 😀
+                        </p>
+                    </div>
+                    <div class="user-profile-img">
+                        <img class="user-profile-img-input" src="/img/profile_img.png" />
+                        <input type="file" id="open-file" accept=".jpg, .jpeg, .png" style="display: none" />
+                    </div>
+                    <div class="open-change-modal">
+                        <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
+                    </div>
+                    <div class="now-pw">
+                        <p>현재 비밀번호</p>
+                        <div>
+                            <input class="now-pw-input" type="text" name="userPassword" />
+                        </div>
+                    </div>
+                    <div class="change-pw">
+                        <p>변경할 비밀번호</p>
+                        <div>
+                            <input class="change-pw-input" type="password" name="userPassword" />
+                        </div>
+                        <div>
+                            <input
+                                class="double-check-ch-pw"
+                                type="password"
+                                name="userPassword"
+                                placeholder="비밀번호 확인"
+                            />
+                        </div>
+                    </div>
+                    <div class="mypage-btns">
+                        <button type="button" id="cancle-btn">취소</button>
+                        <button type="button" id="confirm-btn">확인</button>
+                    </div>
+                    <div class="withdrawal-btn">
+                        <a href="/html/withdrawal.html"
+                            ><p><u>탈퇴하기</u></p></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
