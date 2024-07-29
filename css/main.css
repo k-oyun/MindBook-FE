@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 요소의 크기 계산 */
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 요소가 화면 전체를 차지하도록 설정 */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red; */
+  width: 100%;
+  height: 100vh;
+}
+
+.my-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-top: 60px;
+}
+
+.my-memoirs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-top: 60px;
+}
+.book-container {
+  display: flex;
+  margin-left: 13%;
+  justify-content: flex-start;
+  width: 90%;
+  height: auto;
+}
+
+.memoirs-container {
+  display: flex;
+  margin-left: 4%;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+}
+
+.my-bookshelf-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 6vh;
+}
+
+.my-bookshelf-more-container {
+  width: 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.category-text {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.my-bookshelf-more {
+  font-size: 0.9em;
+  font-weight: 800;
+}
+.arrow {
+  width: 25%;
+  height: 35%;
+  fill: black;
+  margin-bottom: 4%;
+}
+
+.book-img-container {
+  width: 10%;
+  height: 160px;
+  margin-right: 5%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: blue;
+}
+
+.book-img {
+  width: 100%;
+  height: 160px;
+}
+.book-stand {
+  width: 90%;
+  position: relative;
+}
+
+.btn-container {
+  width: 10%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-book-btn {
+  width: 45px;
+  height: 45px;
+}

@@ -1,13 +1,15 @@
-@import 'reset.css';
+@import "reset.css";
 
-@import 'login.css';
+@import "login.css";
 
-@import 'create_account.css';
+@import "create_account.css";
 
-@import 'nav_bar.css';
+@import "nav_bar.css";
 
-@import 'mypage.css';
+@import "mypage.css";
+
+@import "main.css";
 
 body {
-    background-color: #fcf7ee;
+  background-color: #fcf7ee;
 }
