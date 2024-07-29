@@ -3,68 +3,77 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 80%;
 }
 
 .login-page-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 100px;
-    padding-top: 100px;
+    padding-bottom: 8%;
+    margin-left: 10%;
 }
 
 .login-img {
-    width: 600px;
-    height: 560px;
+    width: 90%;
+    height: 90%;
 }
 
 .login-page-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 200px;
-    padding-top: 300px;
+    width: 265%;
+    height: 50vh;
+    margin-top: 50%;
 }
 
+.login-id {
+    width: 100%;
+    height: 30%;
+}
 .login-id p {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 2%;
 }
 
 .login-id-input {
     border-width: 0;
-    width: 400px;
-    height: 60px;
-    margin-bottom: 25px;
+    width: 100%;
+    height: 55%;
     border-radius: 10px;
 }
 
+.login-pw {
+    width: 100%;
+    height: 30%;
+}
+
 .login-pw p {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 2%;
 }
 
 .login-pw-input {
     border-width: 0;
-    width: 400px;
-    height: 60px;
+    width: 100%;
+    height: 55%;
     border-radius: 10px;
-    margin-bottom: 60px;
 }
 
 .login-btn {
-    width: 185px;
-    height: 60px;
+    width: 38%;
+    height: 130%;
     color: #fff;
     background-color: #323047;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 1.4rem;
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    margin-left: 30%;
 }
 
 .login-btn:hover {
@@ -73,16 +82,18 @@
 
 .create-account-msg {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.8rem;
     color: #9b9b9b;
+    margin-top: 5%;
+    margin-left: 30%;
 }
 
 /* 팝업창 */
 #failed-login-modal {
-    display: none;
+    /* display: none; */
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     z-index: 1;
 }
@@ -90,36 +101,35 @@
 .failed-login-icon {
     color: #fff;
     background-color: #e0e0e0;
-    width: 90px;
-    height: 90px;
-    font-size: 80px;
-    margin-left: 280px;
+    width: 12.5%;
+    height: 30%;
+    font-size: 5rem;
     border-radius: 50%;
-    margin-bottom: 20px;
-    margin: 10px 0px 20px 280px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 43.9%;
 }
 
 #failed-login-modal h2 {
-    font-size: 26px;
+    font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 #failed-login-modal p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     color: #a8a8a8;
 }
 
 #failed-login-modal button {
-    display: inline-block;
-    width: 150px;
-    height: 48px;
+    width: 25%;
+    height: 20%;
     border-radius: 22px;
     color: #fff;
     background-color: #323047;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -129,12 +139,12 @@
 }
 
 #failed-login-modal .failed-modal-content {
-    width: 650px;
-    height: 250px;
-    margin: 100px auto;
+    width: 40%;
+    height: 35vh;
+    margin: auto;
     vertical-align: middle;
-    margin-top: -630px;
-    padding: 20px 10px;
+    margin-top: -70vh;
+    padding: 1%;
     background: #fff;
     border-radius: 10px;
 }
