@@ -4,43 +4,162 @@
     width: 100vw;
     height: 80vh;
 }
+
+.account-date-msg-box {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 1%;
+}
+
+.account-date p {
+    position: absolute;
+
+    margin-left: 46%;
+    margin-top: 1.6%;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+}
+
 .mypage-container {
     display: flex;
     background-color: white;
     width: 70%;
     height: 100%;
     margin-top: 2%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.change-profile-img {
+    margin-top: 5%;
+}
+
+.now-pw {
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.now-pw-msg {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.now-pw-input {
+    width: 28vw;
+    height: 7vh;
+    border: 1px solid #6b6b6b;
+    border-radius: 10px;
+}
+
+.now-pw-err {
+    padding-top: 1%;
+    font-size: 0.9rem;
+    color: #c54848;
+}
+
+.change-pw {
+    padding-bottom: 3%;
+}
+
+.change-pw-msg {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.change-pw-msg span {
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding-left: 1.5%;
+    color: #999999;
+}
+.change-pw-input {
+    width: 28vw;
+    height: 7vh;
+    border: 1px solid #6b6b6b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.double-check-ch-pw {
+    width: 28vw;
+    height: 7vh;
+    border: 1px solid #6b6b6b;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.change-pw-err {
+    padding-top: 1%;
+    font-size: 0.9rem;
+    color: #c54848;
+}
+
+.mypage-btns {
+    width: 50vw;
+    padding-left: 21.5%;
+}
+
+#cancle-btn {
+    width: 8vw;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #323047;
+    background-color: #fff;
+    border: 1px solid #323047;
+    border-radius: 5px;
+    margin-right: 10%;
+}
+
+#confirm-btn {
+    width: 8vw;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    background-color: #323047;
+    border: none;
+    border-radius: 5px;
+}
+
+.withdrawal-btn p {
+    margin-top: 30%;
+    font-size: 0.8rem;
+    color: #ff0000;
 }
 
 /* 비밀번호 변경 완료 팝업창 */
 #change-pw-modal {
-    /* display: none; */
+    display: none;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 60vh;
     text-align: center;
     z-index: 1;
 }
 
 .change-pw-icon {
-    padding-top: 13px;
-    padding-bottom: 10px;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 #change-pw-modal p {
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 7%;
 }
 
 #change-pw-modal button {
-    display: inline-block;
-    width: 110px;
-    height: 42px;
-    border-radius: 5px;
+    width: 30%;
+    height: 5vh;
+    border-radius: 20px;
     color: #fff;
     background-color: #323047;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 800;
     cursor: pointer;
 }
@@ -50,11 +169,11 @@
 }
 
 .change-pw-content {
-    width: 400px;
-    height: 200px;
-    margin: 100px auto;
+    width: 30%;
+    height: 26vh;
+    margin: auto;
     vertical-align: middle;
-    margin-top: -720px;
+    margin-top: -60vh;
     padding: 20px 10px;
     background: #fff;
     border-radius: 10px;

@@ -1,52 +1,70 @@
 /* 탈퇴 재확인 팝업창 */
-#create-account-modal {
-    /* display: none; */
+#dc-wd-change-modal {
+    display: none;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 70vh;
     text-align: center;
     z-index: 1;
 }
 
-.create-account-icon {
-    padding-top: 13px;
-    padding-bottom: 10px;
+.dc-wd-change-icon {
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
-#create-account-modal p {
-    font-size: 17px;
+.dc-wd-change-title {
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 2%;
 }
 
-#create-account-modal button {
-    display: inline-block;
-    width: 110px;
-    height: 42px;
-    border-radius: 5px;
+.dc-wd-change-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4%;
+    color: #9b9b9b;
+}
+
+#dc-wd-confirm-button {
+    width: 15%;
+    height: 5vh;
+    border-radius: 20px;
     color: #fff;
     background-color: #323047;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 800;
     cursor: pointer;
 }
 
-#create-account-modal button:hover {
+#dc-wd-confirm-button button:hover {
     opacity: 0.8;
 }
 
-.create-account-content {
-    width: 400px;
-    height: 200px;
-    margin: 100px auto;
+#dc-wd-cancle-button {
+    width: 15%;
+    height: 5vh;
+    border-radius: 20px;
+    border: 1px solid #a9a9a9;
+    background-color: #fff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.dc-wd-change-content {
+    width: 45%;
+    height: 35vh;
+    margin: auto;
     vertical-align: middle;
-    margin-top: -720px;
+    margin-top: -65vh;
     padding: 20px 10px;
     background: #fff;
     border-radius: 10px;
 }
 
-.create-account-modal-back {
+.dc-wd-change-modal-back {
     position: fixed;
     top: 0;
     left: 0;
@@ -56,17 +74,17 @@
     z-index: -1;
 }
 
-/* 회원 팝업창 */
-#failed-login-modal {
+/* 존재하지 않는 회원 팝업창 */
+#failed-account-modal {
     display: none;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
     z-index: 1;
 }
 
-.failed-login-icon {
+.failed-account-icon {
     color: #fff;
     background-color: #e0e0e0;
     width: 12.5%;
@@ -78,20 +96,20 @@
     margin-left: 43.9%;
 }
 
-#failed-login-modal h2 {
-    font-size: 1.6rem;
+#failed-account-modal h2 {
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 2%;
 }
 
-#failed-login-modal p {
+#failed-account-modal p {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 3%;
     color: #a8a8a8;
 }
 
-#failed-login-modal button {
+#failed-account-modal button {
     width: 25%;
     height: 20%;
     border-radius: 22px;
@@ -102,22 +120,22 @@
     cursor: pointer;
 }
 
-#failed-login-modal button:hover {
+#failed-account-modal button:hover {
     opacity: 0.8;
 }
 
-#failed-login-modal .failed-modal-content {
+.failed-account-content {
     width: 40%;
     height: 35vh;
     margin: auto;
     vertical-align: middle;
-    margin-top: -70vh;
+    margin-top: -62vh;
     padding: 1%;
     background: #fff;
     border-radius: 10px;
 }
 
-#failed-login-modal .failed-login-modal-back {
+.failed-account-modal-back {
     position: fixed;
     top: 0;
     left: 0;

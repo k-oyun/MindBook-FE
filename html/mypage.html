@@ -35,51 +35,52 @@
             </div>
         </div>
         <div class="mypage-main">
+            <div class="account-date">
+                <img class="account-date-msg-box" src="/img/말풍선.png" />
+                <p>
+                    <span id="userNickName"></span> 님이 마음책방에 오신지 <span id="membershipDuration"></span>일
+                    되었어요! 😀
+                </p>
+            </div>
             <div class="mypage-container">
-                <div class="account-date">
-                    <div class="account-date-msg-box">
-                        <img src="/img/말풍선.png" />
-                        <p>
-                            <span id="userNickName"></span> 님이 마음책방에 오신지
-                            <span id="membershipDuration"></span>일 되었어요! 😀
-                        </p>
+                <div class="change-profile-img">
+                    <img class="change-profile-img-input" src="/img/profile_img.png" />
+                    <input type="file" id="open-file" accept=".jpg, .jpeg, .png" style="display: none" />
+                </div>
+                <div class="open-change-modal-mypage">
+                    <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
+                </div>
+                <div class="now-pw">
+                    <p class="now-pw-msg">현재 비밀번호</p>
+                    <div>
+                        <input class="now-pw-input" type="text" name="userPassword" />
                     </div>
-                    <div class="user-profile-img">
-                        <img class="user-profile-img-input" src="/img/profile_img.png" />
-                        <input type="file" id="open-file" accept=".jpg, .jpeg, .png" style="display: none" />
+                    <p class="now-pw-err">잘못된 비밀번호 입니다.</p>
+                </div>
+                <div class="change-pw">
+                    <p class="change-pw-msg">변경할 비밀번호<span> 한글 제외 8자 이상</span></p>
+
+                    <div>
+                        <input class="change-pw-input" type="password" name="userPassword" />
                     </div>
-                    <div class="open-change-modal">
-                        <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
+                    <div>
+                        <input
+                            class="double-check-ch-pw"
+                            type="password"
+                            name="userPassword"
+                            placeholder="비밀번호 확인"
+                        />
                     </div>
-                    <div class="now-pw">
-                        <p>현재 비밀번호</p>
-                        <div>
-                            <input class="now-pw-input" type="text" name="userPassword" />
-                        </div>
-                    </div>
-                    <div class="change-pw">
-                        <p>변경할 비밀번호</p>
-                        <div>
-                            <input class="change-pw-input" type="password" name="userPassword" />
-                        </div>
-                        <div>
-                            <input
-                                class="double-check-ch-pw"
-                                type="password"
-                                name="userPassword"
-                                placeholder="비밀번호 확인"
-                            />
-                        </div>
-                    </div>
-                    <div class="mypage-btns">
-                        <button type="button" id="cancle-btn">취소</button>
-                        <button type="button" id="confirm-btn">확인</button>
-                    </div>
-                    <div class="withdrawal-btn">
-                        <a href="/html/withdrawal.html"
-                            ><p><u>탈퇴하기</u></p></a
-                        >
-                    </div>
+                    <p class="change-pw-err">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
+                </div>
+                <div class="mypage-btns">
+                    <button type="button" id="cancle-btn">취소</button>
+                    <button type="button" id="confirm-btn">저장</button>
+                </div>
+                <div class="withdrawal-btn">
+                    <a href="/html/withdrawal.html"
+                        ><p><u>탈퇴하기</u></p></a
+                    >
                 </div>
             </div>
         </div>
@@ -102,7 +103,7 @@
 
                 <p>비밀번호가 <span style="color: #1400ff">변경</span>되었습니다.</p>
 
-                <a href="mypage.html"><button type="button" id="change-pw-button">로그인하기</button></a>
+                <a href="mypage.html"><button type="button" id="change-pw-button">확인</button></a>
             </div>
 
             <div class="change-pw-modal-back"></div>
