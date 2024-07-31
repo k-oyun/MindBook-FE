@@ -35,7 +35,34 @@
             </div>
         </div>
         <div class="mypage-main">
-            <div class="mypage-container"></div>
+            <div class="mypage-container">
+                <img class="mypage-logo-img" src="/img/login_logo.png" />
+
+                <div class="withdrawal-body">
+                    <p class="withdrawal-msg">서비스 탈퇴를 위해 비밀번호를 입력해주세요.</p>
+                    <div>
+                        <input
+                            class="withdrawal-pw-input"
+                            type="password"
+                            name="userPassword"
+                            placeholder="현재 비밀번호"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            class="double-check-wd-pw"
+                            type="password"
+                            name="userPassword"
+                            placeholder="비밀번호 확인"
+                        />
+                    </div>
+                    <p class="withdrawal-err">비밀번호가 일치하지 않습니다.</p>
+                    <div class="withdrawal-btns">
+                        <button type="button" id="wd-cancle-btn">취소</button>
+                        <button type="button" id="wd-confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- 탈퇴 재확인 팝업창 -->
         <div id="dc-wd-change-modal">

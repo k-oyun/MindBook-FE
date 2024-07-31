@@ -1,3 +1,89 @@
+.mypage-logo-img {
+    width: 30%;
+    height: 48%;
+    margin: 0;
+}
+
+.withdrawal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.withdrawal-msg {
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.withdrawal-pw-input {
+    width: 28vw;
+    height: 6.5vh;
+    border: 1px solid #6b6b6b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #9b9b9b;
+}
+
+.double-check-wd-pw {
+    width: 28vw;
+    height: 6.5vh;
+    border: 1px solid #6b6b6b;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #9b9b9b;
+}
+
+.withdrawal-err {
+    margin-top: 1%;
+    margin-right: 29%;
+    font-size: 0.9rem;
+    color: #c54848;
+    display: none;
+}
+
+.withdrawal-btns {
+    width: 50vw;
+    padding-left: 21.5%;
+}
+
+#wd-cancle-btn {
+    width: 8vw;
+    height: 6vh;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #323047;
+    background-color: #fff;
+    border: 1px solid #323047;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 7%;
+    cursor: pointer;
+}
+
+#wd-confirm-btn {
+    width: 8vw;
+    height: 6vh;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    background-color: #323047;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.withdrawal-btns button:hover {
+    opacity: 0.8;
+}
+
 /* 탈퇴 재확인 팝업창 */
 #dc-wd-change-modal {
     display: none;
