@@ -96,6 +96,8 @@
     background-color: transparent;
     font-size: 1rem;
     color: black;
+    width: 55vw;
+    height: 46vh;
 }
 
 .meemoir-write-btns {
