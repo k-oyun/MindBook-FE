@@ -83,6 +83,7 @@
 .error-create-id {
     font-size: 16px;
     color: #c54848;
+    display: none;
 }
 
 /* 닉네임 */
@@ -144,6 +145,7 @@
 .error-create-pw {
     font-size: 16px;
     color: #c54848;
+    display: none;
 }
 
 .open-create-account-modal {
