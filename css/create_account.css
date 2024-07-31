@@ -36,14 +36,12 @@
 
 .user-profile-img {
     position: relative;
-    z-index: 1;
 }
 
 #open-change-modal-btn {
     position: absolute;
     border: 0;
     background-color: transparent;
-    z-index: 2;
     padding-left: 38px;
     margin-top: -52px;
     cursor: pointer;
@@ -175,8 +173,7 @@
 }
 
 #change-img-button {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 17px;
     font-weight: 600;
     background-color: #fff;
@@ -187,7 +184,7 @@
 .button-border {
     margin-left: 25px;
     padding-left: 15px;
-    padding: 5px 0px 5px 15px;
+    padding: 10px 0px 10px 15px;
     width: 320px;
     height: 60px;
     border-style: solid;
@@ -208,7 +205,7 @@
 }
 
 #no-change-button {
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 17px;
     font-weight: 600;
     color: #0d47d9;
