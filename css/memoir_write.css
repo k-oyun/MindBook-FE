@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'santokki';
+    font-style: 'normal';
+    font-weight: 200;
+    src: url('/font/HSSanTokki2.0\(2024\).ttf') format('truetype');
+}
+
+.introduction-memoir {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.description-memoir-rule {
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.how-to-write {
+    font-family: 'santokki';
+    font-size: 2.5rem;
+}
+
+.how-to-write span {
+    font-size: 3rem;
+    color: #837abc;
+}
+
+.description-memoir-rule p {
+    font-size: 1rem;
+    margin-top: 3%;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+.description-memoir-rule h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 5%;
+}
+
+.memoir-warning {
+    font-size: 1rem;
+    color: #babac1;
+    padding-top: 2.5%;
+}
+
+.memoir-write-body {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 2px solid #d9d9d9;
+    margin-left: 20%;
+    margin-top: 7%;
+    border-radius: 15px;
+}
+
+.memoir-write-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0 3% 2.5%;
+    padding-bottom: 2%;
+    width: 95%;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.memoir-write-title span {
+    padding-left: 2%;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.memoir-write-title button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+.memoir-write-title img {
+    width: 70%;
+}
+
+.memoir-write {
+    margin-left: 4%;
+    width: 80%;
+    height: 50vh;
+}
+
+.memoir-write-input {
+    resize: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: black;
+}
+
+.meemoir-write-btns {
+    margin-top: 1%;
+    padding-left: 62.3vw;
+    padding-bottom: 2%;
+}
+
+#memoir-write-cancle {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px;
+    border: 1.5px solid #323047;
+    color: #323047;
+    font-weight: 800;
+    background-color: #fff;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+#memoir-write-confirm {
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 800;
+    background-color: #323047;
+    cursor: pointer;
+}
+
+.meemoir-write-btns button:hover {
+    opacity: 0.8;
+}
