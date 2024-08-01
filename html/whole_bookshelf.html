@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/whole_bookshelf.css" />
+    <link rel="stylesheet" href="/css/nav_bar.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <script
+      src="https://kit.fontawesome.com/8d049b55ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>전체 책장</title>
+  </head>
+  <body class="body">
+    <div class="top-bar">
+      <div class="logo">
+        <a href="main.html">
+          <img class="nav-logo" src="/img/nav_logo.png" />
+        </a>
+      </div>
+      <div class="nav-bar">
+        <a
+          class="nav-link"
+          style="
+            color: #323047;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-thickness: 6px;
+          "
+          href="#"
+          >책장</a
+        >
+        <a class="nav-link" href="#">회고록</a>
+        <a class="nav-link" href="mypage.html">마이페이지</a>
+      </div>
+      <div class="nav-icon">
+        <button type="button" class="logout-button">
+          <img src="/img/logout.png" />
+        </button>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------->
+
+    <div class="container">
+      <div class="search-book-container">
+        <input
+          type="text"
+          class="search-book"
+          placeholder="찾고 싶은 책을 검색해보세요!"
+        />
+        <button class="search-btn">
+          <img src="../img/reading_glass.png" class="reading-glass" />
+        </button>
+      </div>
+
+      <!------------------------------------------------------------------------------>
+
+      <div class="bookshelf-title-container">
+        <img src="../img/book.png" class="whole-bookshelf-img" />
+        <span class="title">전체 책장</span>
+      </div>
+
+      <div class="whole-bookshelf-container">
+        <div class="whole-books">
+          <div class="book-info-container">
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+          </div>
+          <div class="book-info-container">
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <button class="book-add-btn"></button>
+                <div class="book-add-btn-container">
+                  <img src="../img/plus_btn.png" class="book-add-btn-img" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------>
+      <div class="Exist-result-container">
+        <div class="search-result-text">
+          '<span class="book-name" style="color: blue">구의 증명</span>'<span
+            >책을&nbsp;검색한 결과입니다.</span
+          >
+        </div>
+        <div class="search-result">
+          <div class="book-info-container">
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+
+            <div class="book-infos">
+              <div class="book-img"></div>
+              <span class="book-names">모순</span>
+              <span class="book-author">| 양귀자</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------>
+      <div class="NotExist-result-container">
+        <div class="search-result-text">
+          '<span class="book-name" style="color: blue">구의 증명</span>'<span
+            >에 대한&nbsp;내용이 없습니다.</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

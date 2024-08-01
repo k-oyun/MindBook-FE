@@ -1,18 +1,18 @@
-@import 'reset.css';
+@import "reset.css";
 
-@import 'login.css';
+@import "login.css";
 
-@import 'create_account.css';
+@import "create_account.css";
 
-@import 'nav_bar.css';
+@import "nav_bar.css";
 
-@import 'mypage.css';
+@import "mypage.css";
 
-@import 'main.css';
+@import "main.css";
 
-@import 'withdrawal.css';
+@import "withdrawal.css";
 
-@import 'memoir_write.css';
+@import "memoir_write.css";
 
 @import 'calendar.css';
 
@@ -20,12 +20,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 * {
-    font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
 }
 
-@import 'add_book.css';
-
 body {
-    background-color: #fcf7ee;
+  background-color: #fcf7ee;
 }
