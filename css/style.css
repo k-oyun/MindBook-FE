@@ -14,9 +14,12 @@
 
 @import "memoir_write.css";
 
-@import "add_book.css";
+@import 'calendar.css';
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import 'memoir_my_joy.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * {
   font-family: "inter", sans-serif;

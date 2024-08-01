@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="/css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Comptible" content="IE=edge" />
+        <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
+        <title>마음책방</title>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="main.html">
+                    <img class="nav-logo" src="/img/nav_logo.png" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a
+                    class="nav-link"
+                    style="
+                        color: #323047;
+                        text-decoration: underline;
+                        text-underline-offset: 15px;
+                        text-decoration-thickness: 6px;
+                    "
+                    href="#"
+                    >책장</a
+                >
+                <a class="nav-link" href="memoir_my.html">회고록</a>
+                <a class="nav-link" href="mypage.html">마이페이지</a>
+            </div>
+            <div class="nav-icon">
+                <button type="button" class="logout-button"><img src="/img/logout.png" /></button>
+            </div>
+        </div>
+        <div class="joy-main-body">
+            <div class="joy-main-body-left">
+                <div class="joy-main-body-book">
+                    <img src="/img/joy.png" />
+                    <a href="memoir_sad.html"><p>&#62;</p></a>
+                </div>
+                <div class="joy-main-body-book-bar">
+                    <img src="/img/book-stand.png" />
+                </div>
+                <div class="joy-main-body-book-intro">
+                    <p>&#124; 회고<span>기쁨의 기억을 담은 순간</span></p>
+                    <p>&#124; 순간의 감정을 기록하고 공유해보세요</p>
+                </div>
+                <div class="book-colors">
+                    <a href="memoir_my_joy.html"><img class="joy_circle" src="/img/joy_circle.png" /></a>
+                    <a href="memoir_my_sad.html"><img class="sad_circle" src="/img/sad_circle.png" /></a>
+                    <a href="memoir_my_angry.html"><img class="angry_circle" src="/img/angry_circle.png" /></a>
+                    <a href="memoir_my_annoyance.html"
+                        ><img class="annoyance_circle" src="/img/annoyance_circle.png"
+                    /></a>
+                    <a href="memoir_my_anxiety.html"><img class="anxiety_circle" src="/img/anxiety_circle.png" /></a>
+                    <a href="memoir_my_past.html"><img class="past_circle" src="/img/past_circle.png" /></a>
+                </div>
+                <div class="joy-main-body-calender-div">
+                    <p>📆 내 회고록 캘린더</p>
+                    <div class="joy-main-body-calender">
+                        <section class="cal">
+                            <div class="calendar-header">
+                                <button class="nav-btn go-prev" onclick="prevMonth()">
+                                    <img src="/img/calendar_left.png" />
+                                </button>
+                                <div class="year-month"></div>
+                                <button class="nav-btn go-next" onclick="nextMonth()">
+                                    <img src="/img/calendar_right.png" />
+                                </button>
+                                <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                            </div>
+                            <div class="calendar-main">
+                                <div class="days">
+                                    <div class="day">일</div>
+                                    <div class="day">월</div>
+                                    <div class="day">화</div>
+                                    <div class="day">수</div>
+                                    <div class="day">목</div>
+                                    <div class="day">금</div>
+                                    <div class="day">토</div>
+                                </div>
+                                <div class="dates"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="joy-main-body-right">
+                <div class="joy-main-body-detail">
+                    <a href="memoir_my_joy.html"
+                        ><button class="joy-my-memoir-btn" type="button">나의 회고록</button></a
+                    >
+                    <a href="memoir_our_joy.html"
+                        ><button class="joy-our-memoir-btn" type="button">우리의 회고록</button></a
+                    >
+                    <a href="memoir_write.html"><button class="my-memoir-write">회고록 작성</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/js/calendar.js"></script>
+</html>
