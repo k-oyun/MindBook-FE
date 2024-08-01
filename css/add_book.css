@@ -5,7 +5,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%; /* 요소가 화면 전체를 차지하도록 설정 */
+  height: 100%;
 }
 
 .container {
@@ -13,7 +13,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: red; */
   width: 100%;
   height: 100vh;
 }
@@ -23,7 +22,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: red; */
   width: 100%;
   height: 100vh;
 }
@@ -43,7 +41,6 @@ body {
   width: 90%;
   border: none;
   margin-left: 20px;
-  /* background-color: red; */
   font-size: 1.4rem;
   font-weight: 540;
 }
@@ -74,7 +71,6 @@ body {
 .search-results {
   display: flex;
   align-items: center;
-  /* background-color: red; */
   margin-top: 1%;
   margin-bottom: 1%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -136,4 +132,148 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* 팝업창 */
+#failed-login-modal {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.failed-login-icon {
+  margin-right: 45%;
+}
+
+#failed-login-modal h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+#failed-login-modal p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: #a8a8a8;
+}
+
+#failed-login-modal button {
+  width: 25%;
+  height: 15%;
+  border-radius: 22px;
+  color: #fff;
+  background-color: #323047;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#failed-login-modal button:hover {
+  opacity: 0.8;
+}
+
+#failed-login-modal .failed-modal-content {
+  width: 35%;
+  height: 30vh;
+  margin: auto;
+  vertical-align: middle;
+  margin-top: -85vh;
+  padding: 1%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+#failed-login-modal .failed-login-modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.alert-message {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+/*----------------------------------------*/
+#dc-wd-change-modal {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.dc-wd-change-icon {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.dc-wd-change-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.dc-wd-change-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+#dc-wd-confirm-button {
+  width: 22%;
+  height: 4vh;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #323047;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#dc-wd-confirm-button button:hover {
+  opacity: 0.8;
+}
+
+#dc-wd-cancle-button {
+  width: 22%;
+  height: 4vh;
+  border-radius: 20px;
+  border: 1px solid #a9a9a9;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.dc-wd-change-content {
+  width: 35%;
+  height: 33vh;
+  margin: auto;
+  vertical-align: middle;
+  margin-top: -86vh;
+  padding: 20px 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.dc-wd-change-modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
