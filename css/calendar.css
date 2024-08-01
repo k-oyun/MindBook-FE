@@ -1,0 +1,71 @@
+.cal {
+    width: 80%;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 8%;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.year-month {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-btn-go-prev {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 21%;
+    margin-right: 8%;
+}
+
+.nav-btn-go-next {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 7%;
+}
+
+.calendar-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.days {
+    display: flex;
+    padding: 6px 0;
+}
+
+.day {
+    padding-left: 8%;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    padding: 0 7% 5% 5%;
+}
+
+.date {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.date .this {
+    color: #000;
+}
+
+.date .other {
+    color: #ccc;
+}
