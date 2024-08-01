@@ -20,6 +20,8 @@
     font-family: 'inter', sans-serif;
 }
 
+@import "add_book.css";
+
 body {
     background-color: #fcf7ee;
 }
