@@ -18,6 +18,16 @@
 
 @import 'memoir_my_joy.css';
 
+@import 'memoir_my_sad.css';
+
+@import 'memoir_my_angry.css';
+
+@import 'memoir_my_annoyance.css';
+
+@import 'memoir_my_anxiety.css';
+
+@import 'memoir_my_past.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 

@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/nav_bar.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <script
-      src="https://kit.fontawesome.com/8d049b55ed.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>마음책방 메인화면</title>
-  </head>
-  <body class="body">
-    <div class="top-bar">
-      <div class="logo">
-        <a href="main.html">
-          <img class="nav-logo" src="/img/nav_logo.png" />
-        </a>
-      </div>
-      <div class="nav-bar">
-        <a
-          class="nav-link"
-          style="
-            color: #323047;
-            text-decoration: underline;
-            text-underline-offset: 15px;
-            text-decoration-thickness: 6px;
-          "
-          href="main.html"
-          >책장</a
-        >
-        <a class="nav-link" href="memoir_my.html">회고록</a>
-        <a class="nav-link" href="mypage.html">마이페이지</a>
-      </div>
-      <div class="nav-icon">
-        <button type="button" class="logout-button">
-          <img src="/img/logout.png" />
-        </button>
-      </div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
+        <title>마음책방 메인화면</title>
+    </head>
+    <body class="body">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="main.html">
+                    <img class="nav-logo" src="/img/nav_logo.png" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a
+                    class="nav-link"
+                    style="
+                        color: #323047;
+                        text-decoration: underline;
+                        text-underline-offset: 15px;
+                        text-decoration-thickness: 6px;
+                    "
+                    href="main.html"
+                    >책장</a
+                >
+                <a class="nav-link" href="memoir_my.html">회고록</a>
+                <a class="nav-link" href="mypage.html">마이페이지</a>
+            </div>
+            <div class="nav-icon">
+                <button type="button" class="logout-button">
+                    <img src="/img/logout.png" />
+                </button>
+            </div>
+        </div>
 
-    <!--------------------------------------------------------------------------->
-    <div class="container">
-      <div class="my-book-container">
-        <div class="my-bookshelf-text-container">
-          <span class="category-text">나의 책장</span>
-          <a href="#" class="my-bookshelf-more-container">
-            <span class="my-bookshelf-more">더보기</span>
-            <img src="../img/arrow.png" class="arrow" />
-          </a>
+        <!--------------------------------------------------------------------------->
+        <div class="container">
+            <div class="my-book-container">
+                <div class="my-bookshelf-text-container">
+                    <span class="category-text">나의 책장</span>
+                    <a href="#" class="my-bookshelf-more-container">
+                        <span class="my-bookshelf-more">더보기</span>
+                        <img src="../img/arrow.png" class="arrow" />
+                    </a>
+                </div>
+                <div class="book-container">
+                    <div class="book-img-container"></div>
+                    <div class="book-img-container"></div>
+                    <div class="book-img-container"></div>
+                    <div class="btn-container"><img src="../img/add-book.png" class="add-book-btn" /></div>
+                </div>
+                <img src="../img/book-stand.png" class="book-stand" />
+            </div>
+            <!--------------------------------------------------------------------------->
+            <div class="my-memoirs-container">
+                <div class="my-bookshelf-text-container">
+                    <span class="category-text">회고록</span>
+                </div>
+                <div class="memoirs-container">
+                    <div class="book-img-container"><img src="../img/joy.png" class="book-img" /></div>
+                    <div class="book-img-container"><img src="../img/sadness.png" class="book-img" /></div>
+                    <div class="book-img-container"><img src="../img/angry.png" class="book-img" /></div>
+                    <div class="book-img-container"><img src="../img/annoyance.png" class="book-img" /></div>
+                    <div class="book-img-container"><img src="../img/anxiety.png" class="book-img" /></div>
+                    <div class="book-img-container"><img src="../img/past.png" class="book-img" /></div>
+                </div>
+                <img src="../img/book-stand.png" class="book-stand" />
+            </div>
         </div>
-        <div class="book-container">
-          <div class="book-img-container"></div>
-          <div class="book-img-container"></div>
-          <div class="book-img-container"></div>
-          <div class="btn-container"><img src="../img/add-book.png" class="add-book-btn" /></div>
-          
-        </div>
-        <img src="../img/book-stand.png" class="book-stand" />
-      </div>
-      <!--------------------------------------------------------------------------->
-      <div class="my-memoirs-container">
-        <div class="my-bookshelf-text-container">
-          <span class="category-text">회고록</span>
-        </div>
-        <div class="memoirs-container">
-          <div class="book-img-container"><img src="../img/joy.png" class="book-img"></img></div>
-          <div class="book-img-container"><img src="../img/sadness.png" class="book-img"></img></div>
-          <div class="book-img-container"><img src="../img/angry.png" class="book-img"></img></div>
-          <div class="book-img-container"><img src="../img/annoyance.png" class="book-img"></img></div>
-          <div class="book-img-container"><img src="../img/anxiety.png" class="book-img"></img></div>
-          <div class="book-img-container"><img src="../img/past.png" class="book-img"></img></div>
-         
-        </div>
-        <img src="../img/book-stand.png" class="book-stand" />
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
