@@ -4,6 +4,7 @@
     font-size: 1.1rem;
     font-weight: 900;
     margin-top: 1%;
+    color: #6b6b6b;
     cursor: pointer;
 }
 
@@ -14,6 +15,6 @@
     font-size: 1.1rem;
     font-weight: 900;
     margin-top: 1%;
-    color: #6b6b6b;
+    color: black;
     cursor: pointer;
 }
