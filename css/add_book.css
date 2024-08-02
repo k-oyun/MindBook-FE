@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box; /* 패딩과 테두리를 포함하여 요소의 크기 계산 */
+  font-family: "inter", sans-serif;
 }
 html,
 body {
@@ -91,6 +92,7 @@ body {
   width: 15%;
   height: 160px;
   background-color: blue;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .book-info {
