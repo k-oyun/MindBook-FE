@@ -16,7 +16,8 @@ body {
   border-radius: 50px;
   margin-top: 3%;
   width: 50%;
-  height: 7%;
+  height: 5.5vh;
+  margin-right: 3%;
 }
 
 .search-book {
@@ -39,6 +40,7 @@ body {
 .reading-glass {
   width: 45px;
   height: 45px;
+  margin-left: 24px;
 }
 
 .search-result-text {
@@ -71,7 +73,7 @@ body {
 }
 
 .Exist-result-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -92,40 +94,54 @@ body {
   width: 80%;
   height: 80vh;
   margin-top: 4%;
+  /* display: flex; */
 }
 
 .book-info-container {
-  width: auto;
-  height: 40%;
+  width: 95%;
+  height: 55%;
   display: flex;
-  flex-direction: row;
-  margin-left: 10%;
+  /* flex-direction: row; */
+  margin-left: 15%;
 }
 
 .book-infos {
   display: flex;
   flex-direction: column;
   width: 20%;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .book-img {
-  width: 60%;
+  width: 50%;
   height: 24vh;
-  background-color: aqua;
+  /* background-color: aqua; */
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .book-names {
   margin-top: 2vh;
+  margin-bottom: 0.5vh;
+  width: 50%;
+  font-weight: 680;
+}
+
+.book-name {
+  font-weight: 600;
+}
+
+.book-author {
+  font-weight: 700;
 }
 
 .bookshelf-title-container {
-  display: none;
-  width: 90%;
+  display: flex;
+  width: 70%;
   justify-content: flex-start;
   align-items: center;
   margin-top: 10vh;
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 .whole-book-info-container {
@@ -138,7 +154,7 @@ body {
 }
 
 .whole-bookshelf-container {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -147,8 +163,12 @@ body {
 }
 
 .whole-books {
-  width: 80%;
+  width: 75%;
   height: 130vh;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  margin-left: 2%;
 }
 
 .book-add-btn {
@@ -157,15 +177,16 @@ body {
 }
 
 .book-add-btn-img {
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 .book-add-btn-container {
-  width: 60%;
+  width: 50%;
   height: 24vh;
   background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
