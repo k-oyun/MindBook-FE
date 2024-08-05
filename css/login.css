@@ -82,6 +82,7 @@
 
 .make-create-account {
     margin-top: 5%;
+    display: flex;
 }
 
 #create-account-msg {
