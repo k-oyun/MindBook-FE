@@ -1,53 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let bookName = "";
-  let refinedData = {};
-  let refinedSelectedBookData = {};
-  document.querySelector(".search-book").addEventListener("input", function () {
-    bookName = document.querySelector(".search-book").value;
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    let bookName = '';
+    let refinedData = {};
+    let refinedSelectedBookData = {};
+    document.querySelector('.search-book').addEventListener('input', function () {
+        bookName = document.querySelector('.search-book').value;
+    });
 
-  //=====================================================
+    //=====================================================
 
-  const BASE_URL = "http://3.38.119.114:8080";
+    const BASE_URL = 'http://3.38.119.114:8080';
 
-  const bookGet = async () => {
-    const url = `http://3.38.119.114:8080/searchBook?keyword=${bookName}`;
+    const bookGet = async () => {
+        const url = `http://3.38.119.114:8080/searchBook?keyword=${bookName}`;
 
-    const headers = {
-      "X-Naver-Client-Id": "bryNjD_LmXdpMZXtxUlg",
-      "X-Naver-Client-Secret": "M7YMKHpThW",
-    };
+        const headers = {
+            'X-Naver-Client-Id': 'bryNjD_LmXdpMZXtxUlg',
+            'X-Naver-Client-Secret': 'M7YMKHpThW',
+        };
 
-    try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: headers,
-      });
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const data = await response.json();
-      console.log(data);
-      document.querySelector(".hidden-container").style.display = "flex";
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: headers,
+            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            console.log(data);
+            document.querySelector('.hidden-container').style.display = 'flex';
 
-      //============필요 데이터만 정제===============
-      refinedData = data.map((item) => ({
-        title: item.title,
-        author: item.author,
-        publisher: item.publisher,
-        pubdate: item.pubdate,
-        description: item.description,
-        image: item.image,
-      }));
-      const hiddenContainer = document.querySelector(".hidden-container");
+            //============필요 데이터만 정제===============
+            refinedData = data.map((item) => ({
+                title: item.title,
+                author: item.author,
+                publisher: item.publisher,
+                pubdate: item.pubdate,
+                description: item.description,
+                image: item.image,
+            }));
+            const hiddenContainer = document.querySelector('.hidden-container');
 
-      refinedData.forEach((book) => {
-        const bookDiv = document.createElement("div");
-        bookDiv.className = "search-results";
+            refinedData.forEach((book) => {
+                const bookDiv = document.createElement('div');
+                bookDiv.className = 'search-results';
 
-        const pubdateFormatted = book.pubdate;
+                const pubdateFormatted = book.pubdate;
 
-        bookDiv.innerHTML = `
+                bookDiv.innerHTML = `
         <div class='book'>
           <img class="book-img" src="${book.image}" />
           <div class="book-info">
@@ -62,101 +62,98 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
 
-        hiddenContainer.appendChild(bookDiv);
+                hiddenContainer.appendChild(bookDiv);
 
-        //======================================================
-        document.querySelector(".book-name").innerText = bookName;
-        document.querySelector(".result-count").innerText =
-          Object.keys(refinedData).length;
-      });
+                //======================================================
+                document.querySelector('.book-name').innerText = bookName;
+                document.querySelector('.result-count').innerText = Object.keys(refinedData).length;
+            });
 
-      //========================================================
-      document.querySelectorAll(".add-book-btn").forEach((button) => {
-        button.addEventListener("click", function () {
-          const bookId = this.getAttribute("data-id");
+            //========================================================
+            document.querySelectorAll('.add-book-btn').forEach((button) => {
+                button.addEventListener('click', function () {
+                    const bookId = this.getAttribute('data-id');
 
-          const selectedBook = refinedData.find(
-            (book) => book.title === bookId
-          );
+                    const selectedBook = refinedData.find((book) => book.title === bookId);
 
-          if (selectedBook) {
-            refinedSelectedBookData = {
-              title: selectedBook.title,
-              author: selectedBook.author,
-              publisher: selectedBook.publisher,
-              pubdate: selectedBook.pubdate,
-              description: selectedBook.description,
-              image: selectedBook.image,
-            };
-          }
-          addBookPost(refinedSelectedBookData);
+                    if (selectedBook) {
+                        refinedSelectedBookData = {
+                            title: selectedBook.title,
+                            author: selectedBook.author,
+                            publisher: selectedBook.publisher,
+                            pubdate: selectedBook.pubdate,
+                            description: selectedBook.description,
+                            image: selectedBook.image,
+                        };
+                    }
+                    addBookPost(refinedSelectedBookData);
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-      });
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth',
+                    });
+                });
+            });
 
-      //==========================================
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      //   document.querySelector(".hidden-container").style.display = "flex";
-    }
-  };
-
-  document.querySelector(".search-btn").addEventListener("click", bookGet);
-
-  //==============================================================================
-  const addBookPost = async (refinedSelectedBookData) => {
-    const url = `${BASE_URL}/addBook`;
-
-    const headers = {
-      Authorization:
-        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI4NDE2OTMsImV4cCI6MTcyMzAxNDQ5M30.kDHRLWcdkovXSdj-J2R7DA40mi1MJ4zpXnlf5NH4kg0",
-      "Content-Type": "application/json;charset=UTF-8",
+            //==========================================
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            //   document.querySelector(".hidden-container").style.display = "flex";
+        }
     };
-    const body = JSON.stringify({
-      title: refinedSelectedBookData.title,
-      author: refinedSelectedBookData.author,
-      publisher: refinedSelectedBookData.publisher,
-      pubdate: refinedSelectedBookData.pubdate,
-      description: refinedSelectedBookData.description,
-      image: refinedSelectedBookData.image,
-    });
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: headers,
-        body: body,
-      });
-      if (!response.ok) {
-        document.getElementById("failed-login-modal").style.display = "flex";
-        throw new Error("Network response was not ok");
-      }
-      const data = await response.json();
-      console.log(data);
 
-      document.getElementById("dc-wd-change-modal").style.display = "flex";
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+    document.querySelector('.search-btn').addEventListener('click', bookGet);
+
+    //==============================================================================
+    const addBookPost = async (refinedSelectedBookData) => {
+        const url = `${BASE_URL}/addBook`;
+
+        const headers = {
+            Authorization:
+                'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI4NDE2OTMsImV4cCI6MTcyMzAxNDQ5M30.kDHRLWcdkovXSdj-J2R7DA40mi1MJ4zpXnlf5NH4kg0',
+            'Content-Type': 'application/json;charset=UTF-8',
+        };
+        const body = JSON.stringify({
+            title: refinedSelectedBookData.title,
+            author: refinedSelectedBookData.author,
+            publisher: refinedSelectedBookData.publisher,
+            pubdate: refinedSelectedBookData.pubdate,
+            description: refinedSelectedBookData.description,
+            image: refinedSelectedBookData.image,
+        });
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: headers,
+                body: body,
+            });
+            if (!response.ok) {
+                document.getElementById('failed-login-modal').style.display = 'flex';
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            console.log(data);
+
+            document.getElementById('dc-wd-change-modal').style.display = 'flex';
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 });
 
 //=============================================================
-document.getElementById("failed-login-button").addEventListener("click", () => {
-  document.getElementById("failed-login-modal").style.display = "none";
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+document.getElementById('failed-login-button').addEventListener('click', () => {
+    document.getElementById('failed-login-modal').style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
 });
 //============================================================
-document.getElementById("dc-wd-cancle-button").addEventListener("click", () => {
-  document.getElementById("dc-wd-change-modal").style.display = "none";
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+document.getElementById('dc-wd-cancle-button').addEventListener('click', () => {
+    document.getElementById('dc-wd-change-modal').style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
 });
