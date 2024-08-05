@@ -124,9 +124,9 @@
     opacity: 0.8;
 }
 
-.memoir-my-list-div {
+/* .memoir-my-list-div {
     display: none;
-}
+} */
 
 .memoir-my-list {
     display: flex;
@@ -191,9 +191,9 @@
     font-size: 0.9rem;
 }
 
-.my-comment-button-div {
+/* .my-comment-button-div {
     display: none;
-}
+} */
 
 .my-comment-button {
     display: flex;
@@ -226,7 +226,7 @@
 }
 
 .memoir-my-open-div {
-    /* display: none; */
+    display: none;
 }
 
 .memoir-my-open {
@@ -249,6 +249,12 @@
     margin-top: 0.9%;
 }
 
+.memoir-open-my-names {
+    margin-left: 1%;
+    width: 85%;
+    margin-top: 0.9%;
+}
+
 .my-nickname-select {
     font-size: 0.8rem;
     margin-bottom: 0.5%;
@@ -256,6 +262,18 @@
 
 .img-lock {
     margin-top: 1%;
+}
+
+.img-unlock {
+    margin-top: 1%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #8e8e8e;
+    width: 10%;
+}
+
+.img-unlock img {
+    width: 19%;
 }
 
 .text-area {
@@ -332,7 +350,6 @@
 .user-nickname {
     font-weight: 900;
     font-size: 1.1rem;
-
     margin-right: 1%;
 }
 
