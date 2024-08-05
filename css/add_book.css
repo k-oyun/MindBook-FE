@@ -19,7 +19,7 @@ body {
 }
 
 .hidden-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -34,7 +34,7 @@ body {
   border-radius: 50px;
   margin-top: 3%;
   width: 50%;
-  height: 7%;
+  height: 5.5vh;
 }
 
 .search-book {
@@ -57,6 +57,7 @@ body {
 .reading-glass {
   width: 45px;
   height: 45px;
+  margin-left: 24px;
 }
 
 .search-result-text {
@@ -71,6 +72,7 @@ body {
 
 .search-results {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -83,50 +85,50 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  height: auto;
-  margin-top: 7%;
-  margin-bottom: 3%;
+  height: 20vh;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .book-img {
   width: 15%;
-  height: 160px;
-  background-color: blue;
+  height: 200px;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .book-info {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 60%;
   height: 100%;
   margin-left: 5%;
 }
 
 .book-title {
   font-size: 1.5em;
-  margin-top: 7%;
+  margin-top: 4%;
   font-weight: 700;
-  margin-bottom: 30%;
+  margin-bottom: 13%;
 }
 
 .author {
   font-weight: 700;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 .publisher {
   font-weight: 700;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 .published-date {
   font-weight: 700;
 }
 
 .add-book-btn {
-  width: 12%;
+  position: absolute;
+  width: 5.5%;
   height: 45px;
-  margin-top: 8%;
-  margin-left: 35%;
+  margin-top: 4%;
+  margin-left: 40%;
   background-color: #323047;
   border: none;
   border-radius: 7px;
