@@ -5,10 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Comptible" content="IE=edge" />
         <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
-        <script
-            src="https://kit.fontawesome.com/8d049b55ed.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
         <script src="/js/login.js"></script>
         <title>마음책방</title>
     </head>
@@ -21,39 +18,24 @@
                 <div class="login-page-right">
                     <div class="login-id">
                         <p>아이디</p>
-                        <input
-                            class="login-id-input"
-                            type="email"
-                            name="email"
-                        />
+                        <input class="login-id-input" type="email" name="email" />
                     </div>
                     <div class="login-pw">
                         <p>비밀번호</p>
-                        <input
-                            class="login-pw-input"
-                            type="password"
-                            name="userPassword"
-                        />
+                        <input class="login-pw-input" type="password" name="userPassword" />
                     </div>
                     <div class="login-button">
-                        <a href="#"
-                            ><input
-                                class="login-btn"
-                                type="button"
-                                value="로그인"
-                            />
+                        <a href="main.html"
+                            ><input class="login-btn" type="button" value="로그인" onclick="login()" />
                         </a>
                     </div>
                     <div class="make-create-account">
                         <p class="create-account-msg">
-                            <a href="create_account.html"
-                                ><p id="create-account-msg">회원가입하기</p></a
-                            >
-                            <p id="divider">|</p>
-                            <a href="find_password.html"
-                                ><p id="find-password-msg">비밀번호찾기</p></a
-                            >
+                            <a href="create_account.html"><p id="create-account-msg">회원가입하기</p></a>
                         </p>
+
+                        <p id="divider">|</p>
+                        <a href="find_password.html"><p id="find-password-msg">비밀번호찾기</p></a>
                     </div>
                 </div>
             </form>
@@ -65,17 +47,11 @@
                     <i class="fa-solid fa-exclamation"></i>
                 </div>
 
-                <h2>
-                    로그인에 <span style="color: #c54848">실패</span>했습니다
-                </h2>
+                <h2>로그인에 <span style="color: #c54848">실패</span>했습니다</h2>
 
                 <p>아이디 또는 비밀번호를 다시 확인해주세요</p>
 
-                <a href="login.html"
-                    ><button type="button" id="failed-login-button">
-                        확인
-                    </button></a
-                >
+                <a href="login.html"><button type="button" id="failed-login-button">확인</button></a>
             </div>
 
             <div class="failed-login-modal-back"></div>
