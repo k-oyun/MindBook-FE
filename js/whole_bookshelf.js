@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         title: item.title,
         author: item.author,
         image: item.image,
+        id: item.id,
       }));
-      console.log("refined DATA ", refinedData);
 
       //================================================================
       const groupSize = 4;
@@ -39,21 +39,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         group.forEach((book) => {
           const bookInfoHTML = `
-              <div class="book-infos">
+              <div class="book-infos" data-id="${book.id}">
+                <a href="add_book_report.html" class="add_book_report_btn">
                   <img class="book-img" src="${book.image}" alt="Book Image"/>
+                </a>
                   <span class="book-names">${book.title}</span>
                   <span class="book-author">| ${book.author}</span>
+                
               </div>
+          
           `;
+
           bookInfoContainer.innerHTML += bookInfoHTML;
         });
 
         if (i + groupSize >= refinedData.length) {
           const addButtonHTML = `
+          
               <div class="book-infos">
-
                   <button class="book-add-btn"></button>
-                      <a href='add_book.html' class= "move-to-add-book">
+                      <a href='add_book_report.html' class= "move-to-add-book">
                           <div class="book-add-btn-container">
                           <img src="../img/plus_btn.png" class="book-add-btn-img" />
                           </div>
@@ -61,11 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
                   </button>
 
               </div>
+          
               `;
           bookInfoContainer.innerHTML += addButtonHTML;
         }
-
         WholeBooks.appendChild(bookInfoContainer);
+
+        bookInfoContainer.querySelectorAll(".book-infos").forEach((element) => {
+          element.addEventListener("click", function () {
+            const bookId = element.getAttribute("data-id");
+            const link = element.querySelector("a.add_book_report_btn");
+            if (link) {
+              link.href = `add_book_report.html?bookId=${bookId}`;
+            }
+          });
+        });
       }
 
       //======================================================
@@ -127,8 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
         title: item.title,
         author: item.author,
         image: item.image,
+        id: item.id,
       }));
-      console.log("refined DATA ", refinedData);
 
       //================================================================
       const groupSize = 4;
@@ -141,15 +156,17 @@ document.addEventListener("DOMContentLoaded", function () {
         group.forEach((book) => {
           const bookInfoHTML = `
               <div class="book-infos">
-                  <img class="book-img" src="${book.image}" alt="Book Image"/>
-                  <span class="book-names">${book.title}</span>
-                  <span class="book-author">| ${book.author}</span>
+                <img class="book-img" src="${book.image}" alt="Book Image"/>
+                <span class="book-names">${book.title}</span>
+                <span class="book-author">| ${book.author}</span>
               </div>
           `;
           bookInfoContainer.innerHTML += bookInfoHTML;
         });
         searchResult.appendChild(bookInfoContainer);
       }
+
+      //================================================================
     } catch (error) {
       console.error("Error fetching data:", error);
     }

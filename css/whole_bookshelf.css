@@ -105,6 +105,9 @@ body {
   margin-left: 15%;
 }
 
+.add_book_report_btn {
+}
+
 .book-infos {
   display: flex;
   flex-direction: column;

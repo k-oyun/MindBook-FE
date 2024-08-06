@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/8d049b55ed.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/add_book_report.js"></script>
     <link rel="stylesheet" href="/css/whole_bookshelf.css" />
     <link rel="stylesheet" href="/css/nav_bar.css" />
     <link rel="stylesheet" href="/css/add_book_report.css" />
@@ -44,20 +45,30 @@
     <!--------------------------------------------------------------------------->
     <div class="add-book-container">
       <div class="left-side-bar">
-        <div class="img-container"></div>
+        <img src="" class="img-container"></img>
         <img src="../img/book-stand.png" class="book-stands" />
 
         <div class="book-intro-container">
           <div class="book-intro">
             <span class="book-intro-txt">| 제목</span>
-            <span class="book-intro-txt">| 저자</span>
-            <span class="book-intro-txt">| 출판사</span>
-            <span class="book-intro-txt">| 출간일</span>
-          </div>
-          <div class="book-intro-info">
             <span class="book-intro-info-name">모순</span>
+          </div>
+        </div>
+        <div class="book-intro-container">
+          <div class="book-intro">
+            <span class="book-intro-txt">| 저자</span>
             <span class="book-intro-info-author">양귀자</span>
+          </div>
+        </div>
+        <div class="book-intro-container">
+          <div class="book-intro">
+            <span class="book-intro-txt">| 출판사</span>
             <span class="book-intro-info-publisher">쓰다</span>
+          </div>
+        </div>
+        <div class="book-intro-container">
+          <div class="book-intro">
+            <span class="book-intro-txt">| 출간일</span>
             <span class="book-intro-info-pub-date">2013.04.01</span>
           </div>
         </div>
@@ -72,6 +83,9 @@
         </div>
       </div>
       <div class="right-side-bar">
+        <div class="add-book-img-container">
+          <img src="../img/add-book-screen-book.png" class="add-book-img" />
+        </div>
         <div class="how-to-write-container">
           <h1 class="how-to-write">
             어떻게 <span style="color: #837abc">작성</span>해야 할까?
@@ -83,7 +97,7 @@
           <h2>첫째, 책을 읽은 후 실제 삶에서 적용하거나 변화한 사례를 적기</h2>
           <h2>둘째, 책을 읽으면서 느낀 감정과 생각을 작성하기</h2>
         </div>
-        <img src="../img/add-book-screen-book.png" class="add-book-img" />
+        <!-- <img src="../img/add-book-screen-book.png" class="add-book-img" /> -->
         <div class="text-area-container">
           <textarea
             placeholder="이 책이 삶에 남긴 흔적을 기록해주세요"
@@ -94,6 +108,28 @@
           <button class="report-cancle-btn">취소</button>
           <button class="report-add-btn">등록</button>
         </div>
+      </div>
+      <div class="book-report-right-side-bar">
+        <div class="top-title-bar">
+          <span style="font-size: 1.4rem; font-weight: 800; margin-left: 1%;">📝 My mind from this book</span>
+          <button class="delete-btn">삭제하기</button>
+        </div>
+        <div class="book-report-bar">
+          <div class="profile-img"></div>
+          <div class="book-report-info" >
+            <span class="user-name">이서연</span>
+            <span class="creation-date">2023.02.04</span>
+          </div>
+          
+        </div>
+        <div class="user-report-container">
+            <span class="user-report">
+              "모순"은 주인공 강하민의 이야기를 중심으로 전개된다. 하민은 사랑하는 연인을 잃고 깊은 상실감에 빠져있다. 그러던 중 어린 시절의 친구 민규를 다시 만나게 되고, 두 사람은 서로의 아픔을 나누며 점점 가까워진다. 그러나 민규에게도 과거의 상처가 있으며, 이들은 서로의 상처를 치유하는 과정을 겪는다.
+사랑과 상실은 "모순"의 중심 테마이다. 하민은 연인의 죽음으로 인한 슬픔과 공허함을 겪고, 그 과정에서 민규와의 관계를 통해 새로운 형태의 사랑과 치유를 경험한다. 이 작품은 사랑의 여러 가지 얼굴을 통해 인간관계의 복잡성과 깊이를 탐구한다.
+하민과 민규의 이야기는 서로의 상처를 통해 자신을 발견하고 치유하는 과정을 보여준다. 상처는 우리를 성장하게 만들고, 서로의 상처를 이해하고 받아들임으로써 우리는 더욱 성숙한 사람이 될 수 있다는 메시지를 전달한다.
+작품 제목인 "모순"은 인생 자체가 모순으로 가득 차 있음을 상기시킨다. 삶은 예측할 수 없는 사건들로 이루어져 있으며, 우리는 그 속에서 행복과 슬픔, 사랑과 상실을 경험한다. 이 모순을 이해하고 받아들이는 것이 인생의 한 부분임을 작품은 강조한다.
+            </span>
+          </div>
       </div>
     </div>
   </body>
