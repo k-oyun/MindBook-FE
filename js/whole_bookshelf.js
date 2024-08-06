@@ -1,14 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   const BASE_URL = "http://3.38.119.114:8080";
+  const accessToken = getCookie("userToken");
+
+    // 쿠키 가져오기 함수
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            while (cookie.charAt(0) === " ") {
+                cookie = cookie.substring(1, cookie.length);
+            }
+            if (cookie.indexOf(nameEQ) === 0) {
+                return cookie.substring(nameEQ.length, cookie.length);
+            }
+        }
+        return null;
+    }
   var refinedData = {};
   const myBookGet = async () => {
     const url = `${BASE_URL}/myBook`;
 
     const headers = {
-      Authorization:
-        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI4NDE2OTMsImV4cCI6MTcyMzAxNDQ5M30.kDHRLWcdkovXSdj-J2R7DA40mi1MJ4zpXnlf5NH4kg0",
-      "Content-Type": "application/json;charset=UTF-8",
-    };
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json;charset=UTF-8",
+        };
 
     try {
       const response = await fetch(url, {
@@ -116,10 +132,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const url = `${BASE_URL}/myBook/search?title=${bookName}`;
 
     const headers = {
-      Authorization:
-        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI4NDE2OTMsImV4cCI6MTcyMzAxNDQ5M30.kDHRLWcdkovXSdj-J2R7DA40mi1MJ4zpXnlf5NH4kg0",
-      "Content-Type": "application/json;charset=UTF-8",
-    };
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json;charset=UTF-8",
+        };
 
     try {
       const response = await fetch(url, {
