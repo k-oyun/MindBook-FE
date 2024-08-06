@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/add_book.css" />
-    <script
-      src="https://kit.fontawesome.com/8d049b55ed.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <title>책 추가</title>
-  </head>
-  <body class="body">
-    <div class="top-bar">
-      <div class="logo">
-        <a href="main.html">
-          <img class="nav-logo" src="/img/nav_logo.png" />
-        </a>
-      </div>
-      <div class="nav-bar">
-        <a
-          class="nav-link"
-          style="
-            color: #323047;
-            text-decoration: underline;
-            text-underline-offset: 15px;
-            text-decoration-thickness: 6px;
-          "
-          href="#"
-          >책장</a
-        >
-        <a class="nav-link" href="memoir_my_joy.html">회고록</a>
-        <a class="nav-link" href="mypage.html">마이페이지</a>
-      </div>
-      <div class="nav-icon">
-        <button type="button" class="logout-button">
-          <img src="/img/logout.png" />
-        </button>
-      </div>
-    </div>
-
-    <!--------------------------------------------------------------------------->
-
-    <div class="container" name="container">
-      <div class="search-book-container">
-        <input
-          type="text"
-          class="search-book"
-          placeholder="추가하고 싶은 책을 검색하세요"
-        />
-        <button class="search-btn">
-          <img src="../img/reading_glass.png" class="reading-glass" />
-        </button>
-      </div>
-      <div class="hidden-container">
-        <div class="search-result-text">
-          '<span class="book-name"></span>'<span>에 대한&nbsp;</span>
-          <span class="result-count"></span><span>개의 검색 결과</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/add_book.css" />
+        <script
+            src="https://kit.fontawesome.com/8d049b55ed.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/logout.js"></script>
+        <title>책 추가</title>
+    </head>
+    <body class="body">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="main.html">
+                    <img class="nav-logo" src="/img/nav_logo.png" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a
+                    class="nav-link"
+                    style="
+                        color: #323047;
+                        text-decoration: underline;
+                        text-underline-offset: 15px;
+                        text-decoration-thickness: 6px;
+                    "
+                    href="#"
+                    >책장</a
+                >
+                <a class="nav-link" href="memoir_my_joy.html">회고록</a>
+                <a class="nav-link" href="mypage.html">마이페이지</a>
+            </div>
+            <div class="nav-icon">
+                <button type="button" class="logout-button">
+                    <img src="/img/logout.png" />
+                </button>
+            </div>
         </div>
-        <!-- <div class="search-results">
+
+        <!--------------------------------------------------------------------------->
+
+        <div class="container" name="container">
+            <div class="search-book-container">
+                <input
+                    type="text"
+                    class="search-book"
+                    placeholder="추가하고 싶은 책을 검색하세요"
+                />
+                <button class="search-btn">
+                    <img src="../img/reading_glass.png" class="reading-glass" />
+                </button>
+            </div>
+            <div class="hidden-container">
+                <div class="search-result-text">
+                    '<span class="book-name"></span>'<span>에 대한&nbsp;</span>
+                    <span class="result-count"></span
+                    ><span>개의 검색 결과</span>
+                </div>
+                <!-- <div class="search-results">
           <div class="book">
             <img class="book-img" src="" />
             <div class="book-info">
@@ -71,37 +72,46 @@
             <button class="add-book-btn">추가</button>
           </div>
         </div> -->
-      </div>
-    </div>
-    <div id="failed-login-modal">
-      <div class="failed-modal-content">
-        <img src="../img/warning-icon.png" class="failed-login-icon" />
-
-        <h4 class="alert-message">
-          이미 책장에 <span style="color: blue">존재</span>하는 책입니다.
-        </h4>
-
-        <button type="button" id="failed-login-button">확인</button>
-      </div>
-
-      <div class="failed-login-modal-back"></div>
-    </div>
-    <div id="dc-wd-change-modal">
-      <div class="dc-wd-change-content">
-        <div class="dc-wd-change-icon"><img src="/img/nav_logo.png" /></div>
-
-        <p class="dc-wd-change-title">책장에 책 추가가 완료되었습니다!</p>
-        <p class="dc-wd-change-subtitle">책장으로 이동할까요?</p>
-        <div class="dc-wd-change-btns">
-          <button type="button" id="dc-wd-cancle-button">아니오</button>
-          <a href="whole_bookshelf.html"
-            ><button type="button" id="dc-wd-confirm-button">예</button></a
-          >
+            </div>
         </div>
-      </div>
+        <div id="failed-login-modal">
+            <div class="failed-modal-content">
+                <img src="../img/warning-icon.png" class="failed-login-icon" />
 
-      <div class="dc-wd-change-modal-back"></div>
-    </div>
-    <script src="../js/add_book.js"></script>
-  </body>
+                <h4 class="alert-message">
+                    이미 책장에 <span style="color: blue">존재</span>하는
+                    책입니다.
+                </h4>
+
+                <button type="button" id="failed-login-button">확인</button>
+            </div>
+
+            <div class="failed-login-modal-back"></div>
+        </div>
+        <div id="dc-wd-change-modal">
+            <div class="dc-wd-change-content">
+                <div class="dc-wd-change-icon">
+                    <img src="/img/nav_logo.png" />
+                </div>
+
+                <p class="dc-wd-change-title">
+                    책장에 책 추가가 완료되었습니다!
+                </p>
+                <p class="dc-wd-change-subtitle">책장으로 이동할까요?</p>
+                <div class="dc-wd-change-btns">
+                    <button type="button" id="dc-wd-cancle-button">
+                        아니오
+                    </button>
+                    <a href="whole_bookshelf.html"
+                        ><button type="button" id="dc-wd-confirm-button">
+                            예
+                        </button></a
+                    >
+                </div>
+            </div>
+
+            <div class="dc-wd-change-modal-back"></div>
+        </div>
+        <script src="../js/add_book.js"></script>
+    </body>
 </html>

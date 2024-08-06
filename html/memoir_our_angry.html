@@ -6,7 +6,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Comptible" content="IE=edge" />
         <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
-        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/8d049b55ed.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/logout.js"></script>
         <title>마음책방</title>
     </head>
     <body>
@@ -32,7 +36,9 @@
                 <a class="nav-link" href="mypage.html">마이페이지</a>
             </div>
             <div class="nav-icon">
-                <button type="button" class="logout-button"><img src="/img/logout.png" /></button>
+                <button type="button" class="logout-button">
+                    <img src="/img/logout.png" />
+                </button>
             </div>
         </div>
         <div class="joy-main-body">
@@ -50,25 +56,47 @@
                     <p>&#124; 순간의 감정을 기록하고 공유해보세요</p>
                 </div>
                 <div class="book-colors">
-                    <a href="memoir_our_joy.html"><img class="joy_circle" src="/img/joy_circle.png" /></a>
-                    <a href="memoir_our_sad.html"><img class="sad_circle" src="/img/sad_circle.png" /></a>
-                    <a href="memoir_our_angry.html"><img class="angry_circle-angry" src="/img/angry_circle.png" /></a>
-                    <a href="memoir_our_annoyance.html"
-                        ><img class="annoyance_circle" src="/img/annoyance_circle.png"
+                    <a href="memoir_our_joy.html"
+                        ><img class="joy_circle" src="/img/joy_circle.png"
                     /></a>
-                    <a href="memoir_our_anxiety.html"><img class="anxiety_circle" src="/img/anxiety_circle.png" /></a>
-                    <a href="memoir_our_past.html"><img class="past_circle" src="/img/past_circle.png" /></a>
+                    <a href="memoir_our_sad.html"
+                        ><img class="sad_circle" src="/img/sad_circle.png"
+                    /></a>
+                    <a href="memoir_our_angry.html"
+                        ><img
+                            class="angry_circle-angry"
+                            src="/img/angry_circle.png"
+                    /></a>
+                    <a href="memoir_our_annoyance.html"
+                        ><img
+                            class="annoyance_circle"
+                            src="/img/annoyance_circle.png"
+                    /></a>
+                    <a href="memoir_our_anxiety.html"
+                        ><img
+                            class="anxiety_circle"
+                            src="/img/anxiety_circle.png"
+                    /></a>
+                    <a href="memoir_our_past.html"
+                        ><img class="past_circle" src="/img/past_circle.png"
+                    /></a>
                 </div>
                 <div class="joy-main-body-calendar-div">
                     <p class="joy-main-body-calendar-p">📆 내 회고록 캘린더</p>
                     <div class="joy-main-body-calendar">
                         <section class="cal">
                             <div class="calendar-header">
-                                <button class="nav-btn-go-prev" onclick="prevMonth()">
+                                <button
+                                    class="nav-btn-go-prev"
+                                    onclick="prevMonth()"
+                                >
                                     <img src="/img/calendar_left.png" />
                                 </button>
                                 <div class="year-month"></div>
-                                <button class="nav-btn-go-next" onclick="nextMonth()">
+                                <button
+                                    class="nav-btn-go-next"
+                                    onclick="nextMonth()"
+                                >
                                     <img src="/img/calendar_right.png" />
                                 </button>
                             </div>
@@ -91,10 +119,14 @@
             <div class="joy-main-body-right">
                 <div class="joy-main-body-detail">
                     <a href="memoir_my_angry.html"
-                        ><button class="joy-my-memoir-btn" type="button">나의 회고록</button></a
+                        ><button class="joy-my-memoir-btn" type="button">
+                            나의 회고록
+                        </button></a
                     >
                     <a href="memoir_our_angry.html"
-                        ><button class="joy-our-memoir-btn" type="button">우리의 회고록</button></a
+                        ><button class="joy-our-memoir-btn" type="button">
+                            우리의 회고록
+                        </button></a
                     >
                 </div>
                 <div class="memoir-our-open-div">
@@ -105,8 +137,15 @@
                                 <img id="memoir-our-img" src="/img/angry.png" />
                             </div>
                             <div class="memoir-our-names">
-                                <p class="our-nickname-select" id="our-comment-nickname">이서연</p>
-                                <p id="our-memoir-name-select">2024월 7월 30일의 회고</p>
+                                <p
+                                    class="our-nickname-select"
+                                    id="our-comment-nickname"
+                                >
+                                    이서연
+                                </p>
+                                <p id="our-memoir-name-select">
+                                    2024월 7월 30일의 회고
+                                </p>
                             </div>
                             <div class="img-unlock">
                                 <img src="/img/댓글.png" />
@@ -117,34 +156,58 @@
                             <div id="text">안녕하세요 밍밍 먕먕 묭묭</div>
                         </div>
                         <div class="switch-btn">
-                            <button id="before-btn"><img src="/img/_ 이전글.png" /></button>
-                            <button id="after-btn"><img src="/img/다음글 _.png" /></button>
+                            <button id="before-btn">
+                                <img src="/img/_ 이전글.png" />
+                            </button>
+                            <button id="after-btn">
+                                <img src="/img/다음글 _.png" />
+                            </button>
                         </div>
                         <div class="add-comment-div">
-                            <textarea class="add-comment" placeholder="회고록에 댓글을 남겨보세요!"></textarea>
+                            <textarea
+                                class="add-comment"
+                                placeholder="회고록에 댓글을 남겨보세요!"
+                            ></textarea>
                         </div>
                         <div class="add-comment-detail">
                             <p class="textCount">0</p>
                             <p class="textTotal">/200</p>
                         </div>
-                        <button type="button" id="add-comment-confirm">댓글 달기</button>
+                        <button type="button" id="add-comment-confirm">
+                            댓글 달기
+                        </button>
                     </div>
                     <div class="memoir-our-comments">
                         <p class="memoir-nickname">
-                            <span class="comment-our-nickname" id="our-comment-nickname">💬 이서연</span> 님의 회고록에
-                            달린 댓글이에요
+                            <span
+                                class="comment-our-nickname"
+                                id="our-comment-nickname"
+                                >💬 이서연</span
+                            >
+                            님의 회고록에 달린 댓글이에요
                         </p>
                         <div class="memoir-our-comment">
                             <div class="memoir-comment-our-img-div">
                                 <div class="memoir-comment-img-back"></div>
-                                <img id="memoir-comment-img" src="/img/angry.png" />
+                                <img
+                                    id="memoir-comment-img"
+                                    src="/img/angry.png"
+                                />
                             </div>
                             <div class="comment-text-area">
-                                <span class="user-nickname" id="our-comment-nickname">이서연</span>
-                                <span id="our-comment-content">그냥 못해먹겠네</span>
+                                <span
+                                    class="user-nickname"
+                                    id="our-comment-nickname"
+                                    >이서연</span
+                                >
+                                <span id="our-comment-content"
+                                    >그냥 못해먹겠네</span
+                                >
                             </div>
                             <div class="comment-detail">
-                                <button type="button" id="delete-my-comment"><img src="/img/trashcan.png" /></button>
+                                <button type="button" id="delete-my-comment">
+                                    <img src="/img/trashcan.png" />
+                                </button>
                                 <p id="our-comment-write-date">2024.07.22</p>
                             </div>
                         </div>
@@ -162,21 +225,40 @@
                         <button id="our-memoir-detail" type="button">
                             <p id="our-memoir-name">2024월 7월 30일의 회고</p>
                             <span id="memoir-our-open-comment">
-                                &#124; <img src="/img/댓글.png" /> <span id="our-memoir-comment-number">39</span></span
+                                &#124; <img src="/img/댓글.png" />
+                                <span id="our-memoir-comment-number"
+                                    >39</span
+                                ></span
                             >
                         </button>
                     </div>
                 </div>
                 <div class="our-comment-button-div">
                     <div class="our-comment-button">
-                        <button id="our-comment-button-left" type="button">&#60;</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-number" type="button">1</button>
-                        <button id="our-comment-button-right" type="button">></button>
+                        <button id="our-comment-button-left" type="button">
+                            &#60;
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-number" type="button">
+                            1
+                        </button>
+                        <button id="our-comment-button-right" type="button">
+                            >
+                        </button>
                     </div>
                 </div>
             </div>
@@ -184,19 +266,33 @@
         <!-- 팝업창 -->
         <div id="delete-comment-modal">
             <div class="delete-comment-content">
-                <div class="delete-comment-icon"><img src="/img/warning-icon.png" /></div>
+                <div class="delete-comment-icon">
+                    <img src="/img/warning-icon.png" />
+                </div>
 
                 <p class="delete-comment-title">
                     작성하신 댓글을
                     <span style="color: #000aff">삭제</span>하시겠습니까?
                 </p>
-                <p class="delete-comment-subtitle">한 번 삭제하면 영구적으로 삭제됩니다.</p>
+                <p class="delete-comment-subtitle">
+                    한 번 삭제하면 영구적으로 삭제됩니다.
+                </p>
                 <div class="delete-comment-btns">
                     <a href="memoir_our_joy.html"
-                        ><button type="button" id="delete-comment-cancle-button">취소</button></a
+                        ><button
+                            type="button"
+                            id="delete-comment-cancle-button"
+                        >
+                            취소
+                        </button></a
                     >
                     <a href="memoir_our_joy.html"
-                        ><button type="button" id="delete-comment-confirm-button">확인</button></a
+                        ><button
+                            type="button"
+                            id="delete-comment-confirm-button"
+                        >
+                            확인
+                        </button></a
                     >
                 </div>
             </div>

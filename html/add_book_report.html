@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>독후감</title>
-    <script
-      src="https://kit.fontawesome.com/8d049b55ed.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/whole_bookshelf.css" />
-    <link rel="stylesheet" href="/css/nav_bar.css" />
-    <link rel="stylesheet" href="/css/add_book_report.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body class="body">
-    <div class="top-bar">
-      <div class="logo">
-        <a href="main.html">
-          <img class="nav-logo" src="/img/nav_logo.png" />
-        </a>
-      </div>
-      <div class="nav-bar">
-        <a
-          class="nav-link"
-          style="
-            color: #323047;
-            text-decoration: underline;
-            text-underline-offset: 15px;
-            text-decoration-thickness: 6px;
-          "
-          href="#"
-          >책장</a
-        >
-        <a class="nav-link" href="#">회고록</a>
-        <a class="nav-link" href="mypage.html">마이페이지</a>
-      </div>
-      <div class="nav-icon">
-        <button type="button" class="logout-button">
-          <img src="/img/logout.png" />
-        </button>
-      </div>
-    </div>
-    <!--------------------------------------------------------------------------->
-    <div class="add-book-container">
-      <div class="left-side-bar">
-        <div class="img-container"></div>
-        <img src="../img/book-stand.png" class="book-stands" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>독후감</title>
+        <script
+            src="https://kit.fontawesome.com/8d049b55ed.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/logout.js"></script>
+        <link rel="stylesheet" href="/css/whole_bookshelf.css" />
+        <link rel="stylesheet" href="/css/nav_bar.css" />
+        <link rel="stylesheet" href="/css/add_book_report.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body class="body">
+        <div class="top-bar">
+            <div class="logo">
+                <a href="main.html">
+                    <img class="nav-logo" src="/img/nav_logo.png" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a
+                    class="nav-link"
+                    style="
+                        color: #323047;
+                        text-decoration: underline;
+                        text-underline-offset: 15px;
+                        text-decoration-thickness: 6px;
+                    "
+                    href="#"
+                    >책장</a
+                >
+                <a class="nav-link" href="#">회고록</a>
+                <a class="nav-link" href="mypage.html">마이페이지</a>
+            </div>
+            <div class="nav-icon">
+                <button type="button" class="logout-button">
+                    <img src="/img/logout.png" />
+                </button>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------->
+        <div class="add-book-container">
+            <div class="left-side-bar">
+                <div class="img-container"></div>
+                <img src="../img/book-stand.png" class="book-stands" />
 
-        <div class="book-intro-container">
-          <div class="book-intro">
-            <span class="book-intro-txt">| 제목</span>
-            <span class="book-intro-txt">| 저자</span>
-            <span class="book-intro-txt">| 출판사</span>
-            <span class="book-intro-txt">| 출간일</span>
-          </div>
-          <div class="book-intro-info">
-            <span class="book-intro-info-name">모순</span>
-            <span class="book-intro-info-author">양귀자</span>
-            <span class="book-intro-info-publisher">쓰다</span>
-            <span class="book-intro-info-pub-date">2013.04.01</span>
-          </div>
+                <div class="book-intro-container">
+                    <div class="book-intro">
+                        <span class="book-intro-txt">| 제목</span>
+                        <span class="book-intro-txt">| 저자</span>
+                        <span class="book-intro-txt">| 출판사</span>
+                        <span class="book-intro-txt">| 출간일</span>
+                    </div>
+                    <div class="book-intro-info">
+                        <span class="book-intro-info-name">모순</span>
+                        <span class="book-intro-info-author">양귀자</span>
+                        <span class="book-intro-info-publisher">쓰다</span>
+                        <span class="book-intro-info-pub-date">2013.04.01</span>
+                    </div>
+                </div>
+                <div class="book-brief-intro">
+                    <span class="book-intro-txt">| 간략소개</span>
+                    <span class="book-intro-info-brief"
+                        >이 책은 재미가 너무 없습니다~ 읽지마세요 사지마세요이
+                        책은 재미가 너무 없습니다~ 읽지마세요 사지마세요이 책은
+                        재미가 너무 없습니다~ 읽지마세요 사지마세요이 책은
+                        재미가 너무 없습니다~ 읽지마세요 사지마세요</span
+                    >
+                </div>
+            </div>
+            <div class="right-side-bar">
+                <div class="how-to-write-container">
+                    <h1 class="how-to-write">
+                        어떻게 <span style="color: #837abc">작성</span>해야
+                        할까?
+                    </h1>
+                    <p>
+                        소중한 감정을 기록하기 위해
+                        <span style="color: #837abc">가이드라인</span>을
+                        지켜주세요&#33;
+                    </p>
+                    <h2>
+                        첫째, 책을 읽은 후 실제 삶에서 적용하거나 변화한 사례를
+                        적기
+                    </h2>
+                    <h2>둘째, 책을 읽으면서 느낀 감정과 생각을 작성하기</h2>
+                </div>
+                <img
+                    src="../img/add-book-screen-book.png"
+                    class="add-book-img"
+                />
+                <div class="text-area-container">
+                    <textarea
+                        placeholder="이 책이 삶에 남긴 흔적을 기록해주세요"
+                        class="book-report"
+                    ></textarea>
+                </div>
+                <div class="report-btn-container">
+                    <button class="report-cancle-btn">취소</button>
+                    <button class="report-add-btn">등록</button>
+                </div>
+            </div>
         </div>
-        <div class="book-brief-intro">
-          <span class="book-intro-txt">| 간략소개</span>
-          <span class="book-intro-info-brief"
-            >이 책은 재미가 너무 없습니다~ 읽지마세요 사지마세요이 책은 재미가
-            너무 없습니다~ 읽지마세요 사지마세요이 책은 재미가 너무 없습니다~
-            읽지마세요 사지마세요이 책은 재미가 너무 없습니다~ 읽지마세요
-            사지마세요</span
-          >
-        </div>
-      </div>
-      <div class="right-side-bar">
-        <div class="how-to-write-container">
-          <h1 class="how-to-write">
-            어떻게 <span style="color: #837abc">작성</span>해야 할까?
-          </h1>
-          <p>
-            소중한 감정을 기록하기 위해
-            <span style="color: #837abc">가이드라인</span>을 지켜주세요&#33;
-          </p>
-          <h2>첫째, 책을 읽은 후 실제 삶에서 적용하거나 변화한 사례를 적기</h2>
-          <h2>둘째, 책을 읽으면서 느낀 감정과 생각을 작성하기</h2>
-        </div>
-        <img src="../img/add-book-screen-book.png" class="add-book-img" />
-        <div class="text-area-container">
-          <textarea
-            placeholder="이 책이 삶에 남긴 흔적을 기록해주세요"
-            class="book-report"
-          ></textarea>
-        </div>
-        <div class="report-btn-container">
-          <button class="report-cancle-btn">취소</button>
-          <button class="report-add-btn">등록</button>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
