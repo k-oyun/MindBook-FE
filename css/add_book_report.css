@@ -21,7 +21,7 @@ body {
 }
 
 .left-side-bar {
-  width: 26%;
+  width: 30%;
   height: 100%;
   border-right: 1px dotted rgba(0, 0, 0, 0.3);
   display: flex;
@@ -29,52 +29,62 @@ body {
   flex-direction: column;
 }
 .img-container {
-  width: 50%;
-  height: 30%;
+  width: 40%;
+  height: 25%;
   margin-top: 3vh;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .book-stands {
-  width: 65%;
+  width: 70%;
   height: 6vh;
 }
 
 .book-intro-container {
   display: flex;
   flex-direction: row;
-  width: 65%;
+  width: 100%;
+  margin-left: 40%;
   /* background-color: red; */
 }
 
 .book-intro {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-right: 1.5vw;
+  width: 80%;
 }
 .book-intro-txt {
   margin-bottom: 0.5vh;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
+  margin-right: 5%;
 }
 .book-intro-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 50%;
 }
 
 .book-intro-info-name,
 .book-intro-info-author,
 .book-intro-info-publisher,
 .book-intro-info-pub-date {
-  margin-bottom: 0.5vh;
+  margin-bottom: 0.8vh;
+  margin-left: 15%;
   font-weight: 600;
   /* color: rgba(0, 0, 0, 0.6); */
+}
+
+.book-intro-info-publisher,
+.book-intro-info-pub-date {
+  margin-left: 10%;
 }
 
 .book-brief-intro {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 60%;
 }
 
 .book-intro-info-brief {
@@ -87,10 +97,29 @@ body {
 .right-side-bar {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   /* background-color: blue; */
   /* justify-content: center; */
+}
+
+.book-report-right-side-bar {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.top-title-bar {
+  display: flex;
+  width: 90%;
+  height: 8%;
+  align-items: center;
+  /* background-color: red; */
+  /* margin-left: 5%; */
+  border-bottom: 1px solid black;
 }
 
 .how-to-write-container {
@@ -98,6 +127,7 @@ body {
   height: 30vh;
   margin-top: 10vh;
   margin-left: 20%;
+  position: relative;
 }
 
 .how-to-write-container p {
@@ -116,10 +146,18 @@ body {
   margin-bottom: 3vh;
 }
 
+.add-book-img-container {
+  position: relative;
+}
+
 .add-book-img {
   position: absolute;
   margin-left: 40vw;
-  top: 2;
+  top: 5;
+  left: 100;
+  /* padding-bottom: 20vh; */
+  margin-right: 50vw;
+  /* bottom: 100; */
   width: 15vw;
 }
 
@@ -175,4 +213,55 @@ body {
   background-color: #323047;
   color: white;
   border-radius: 5px;
+}
+
+.delete-btn {
+  width: 6vw;
+  height: 5vh;
+  border: none;
+  background-color: #323047;
+  border-radius: 5px;
+  color: white;
+  margin-left: 63%;
+  margin-bottom: 0.5%;
+}
+
+.book-report-bar {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  margin-top: 5vh;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.profile-img {
+  width: 5vw;
+  height: 8vh;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.book-report-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.user-name {
+  margin-top: 7%;
+}
+
+.creation-date {
+  margin-top: 3%;
+  font-size: 0.9rem;
+}
+
+.user-report-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin-top: 4%;
 }
