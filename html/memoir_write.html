@@ -74,13 +74,11 @@
         </div>
         <div class="memoir-write-body">
             <div class="memoir-write-title">
-                <span id="today-date-title">2024년 7월 22일 회고</span>
-                <button>
-                    <img
-                        class="lock-icon"
-                        id="lock-icon"
-                        src="/img/write_lock.png"
-                    />
+
+                <span id="today-date-title"></span>
+                <button id="lock-button"><img class="lock-icon" id="lock-icon" src="/img/write_lock.png" /></button>
+                <button id="unlock-button">
+                    <img class="unlock-icon" id="unlock-icon" src="/img/write_unlock.png" />
                 </button>
             </div>
             <div class="memoir-write">
@@ -96,4 +94,5 @@
             <button type="button" id="memoir-write-confirm">저장</button>
         </div>
     </body>
+    <script src="/js/memoir_write.js"></script>
 </html>
