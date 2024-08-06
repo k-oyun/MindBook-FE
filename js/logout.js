@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("로그아웃 되었습니다.");
 
         // 로그인 페이지로 이동
-        window.location.href = "/html/login.html";
+        window.location.href = "../index.html";
     });
 });
