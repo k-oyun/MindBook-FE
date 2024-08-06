@@ -5,20 +5,32 @@
     height: 80vh;
 }
 
+.account-date {
+    display: flex;
+    width: auto;
+}
+
 .account-date-msg-box {
     position: absolute;
-    margin-left: 45%;
-    margin-top: 1%;
+    margin-left: 40%;
+    margin-top: 3%;
+    display: flex;
+    width: 22%;
 }
 
 .account-date p {
     position: absolute;
-
-    margin-left: 46%;
-    margin-top: 1.6%;
+    margin-left: 41%;
+    margin-top: 3.5%;
     font-size: 1rem;
     font-weight: 800;
     color: #fff;
+    width: auto;
+}
+
+#account-msg {
+    font-weight: 500;
+    text-align: center;
 }
 
 .mypage-container {

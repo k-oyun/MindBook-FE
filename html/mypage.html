@@ -5,7 +5,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Comptible" content="IE=edge" />
         <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
-        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/8d049b55ed.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/mypage.js"></script>
         <title>마음책방</title>
     </head>
     <body>
@@ -31,7 +35,9 @@
                 <a class="nav-link" href="mypage.html">마이페이지</a>
             </div>
             <div class="nav-icon">
-                <button type="button" class="logout-button"><img src="/img/logout.png" /></button>
+                <button type="button" class="logout-button">
+                    <img src="/img/logout.png" />
+                </button>
             </div>
         </div>
         <div class="mypage-main">
@@ -41,24 +47,39 @@
             </div>
             <div class="mypage-container">
                 <div class="change-profile-img">
-                    <img class="change-profile-img-input" src="/img/profile_img.png" />
-                    <input type="file" id="open-file" accept=".jpg, .jpeg, .png" style="display: none" />
-                </div>
-                <div class="open-change-modal-mypage">
-                    <button type="button" id="open-change-modal-btn"><img src="/img/change_img.png" /></button>
+                    <img
+                        class="change-profile-img-input"
+                        src="/img/profile_img.png"
+                    />
+                    <input
+                        type="file"
+                        id="open-file"
+                        accept=".jpg, .jpeg, .png"
+                        style="display: none"
+                    />
                 </div>
                 <div class="now-pw">
                     <p class="now-pw-msg">현재 비밀번호</p>
                     <div>
-                        <input class="now-pw-input" type="text" name="userPassword" />
+                        <input
+                            class="now-pw-input"
+                            type="text"
+                            name="userPassword"
+                        />
                     </div>
                     <p class="now-pw-err">잘못된 비밀번호 입니다.</p>
                 </div>
                 <div class="change-pw">
-                    <p class="change-pw-msg">변경할 비밀번호<span> 한글 제외 8자 이상</span></p>
+                    <p class="change-pw-msg">
+                        변경할 비밀번호<span> 한글 제외 8자 이상</span>
+                    </p>
 
                     <div>
-                        <input class="change-pw-input" type="password" name="userPassword" />
+                        <input
+                            class="change-pw-input"
+                            type="password"
+                            name="userPassword"
+                        />
                     </div>
                     <div>
                         <input
@@ -68,7 +89,10 @@
                             placeholder="비밀번호 확인"
                         />
                     </div>
-                    <p class="change-pw-err">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
+                    <p class="change-pw-err">
+                        조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지
+                        않습니다.
+                    </p>
                 </div>
                 <div class="mypage-btns">
                     <button type="button" id="cancle-btn">취소</button>
@@ -84,23 +108,42 @@
         <!--이미지 변경 팝업창 -->
         <div id="choose-img-modal">
             <div class="choose-img-content">
-                <input type="button" id="change-img-button" value="파일에서 사진 선택" />
+                <input
+                    type="button"
+                    id="change-img-button"
+                    value="파일에서 사진 선택"
+                />
 
                 <div class="button-border">
-                    <input type="button" id="back-basic-img-button" value="기본이미지로 변경" />
+                    <input
+                        type="button"
+                        id="back-basic-img-button"
+                        value="기본이미지로 변경"
+                    />
                 </div>
-                <a href="create_account.html"><input type="button" id="no-change-button" value="취소" /></a>
+                <a href="create_account.html"
+                    ><input type="button" id="no-change-button" value="취소"
+                /></a>
             </div>
             <div class="choose-img-modal-back"></div>
         </div>
         <!-- 비밀번호 변경 완료 팝업창 -->
         <div id="change-pw-modal">
             <div class="change-pw-content">
-                <div class="change-pw-icon"><img src="/img/nav_logo.png" /></div>
+                <div class="change-pw-icon">
+                    <img src="/img/nav_logo.png" />
+                </div>
 
-                <p>비밀번호가 <span style="color: #1400ff">변경</span>되었습니다.</p>
+                <p>
+                    비밀번호가
+                    <span style="color: #1400ff">변경</span>되었습니다.
+                </p>
 
-                <a href="mypage.html"><button type="button" id="change-pw-button">확인</button></a>
+                <a href="mypage.html"
+                    ><button type="button" id="change-pw-button">
+                        확인
+                    </button></a
+                >
             </div>
 
             <div class="change-pw-modal-back"></div>
