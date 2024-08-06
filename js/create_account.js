@@ -80,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then((data) => {
                 // 이메일 중복 확인 성공
-                // emailAuthorizeInput.style.display = 'block';
-                // emailAuthorizeBtn.style.display = 'block';
                 authorizeMsgBtn.style.display = 'block';
                 errorCreateId.style.display = 'none';
                 createAccountBtn.disabled = true;
@@ -204,13 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 회원가입 버튼 클릭 시 모달 표시
     createAccountBtn.addEventListener('click', function () {
-        if (validatePasswords()) {
-            createAccountModal.style.display = 'block';
-        }
-    });
-
-    // 회원가입 완료 버튼 클릭 시 서버 요청
-    createAccountButton.addEventListener('click', function () {
         const email = emailInput.value.trim();
         const nickname = nicknameInput.value.trim();
         const password = passwordInput.value.trim();
@@ -262,12 +253,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('회원가입이 완료되었습니다!');
                     window.location.href = 'login.html';
                 } else {
-                    alert('회원가입 요청 처리 중 오류가 발생했습니다. 다시 시도해주세요.');
+                    // alert('회원가입 요청 처리 중 오류가 발생했습니다. 다시 시도해주세요.');
                 }
             })
             .catch((error) => {
                 console.error('Error:', error); // 에러 로그
                 alert('회원가입 요청 처리 중 오류가 발생했습니다. 다시 시도해주세요.');
             });
+
+        if (validatePasswords()) {
+            createAccountModal.style.display = 'block';
+        }
     });
 });
