@@ -40,10 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const enteredEmail = userNameInput.value;
         const enteredPassword = userPasswordInput.value;
 
-        // 입력된 이메일과 비밀번호 콘솔에 출력
-        console.log('Entered Email:', enteredEmail);
-        console.log('Entered Password:', enteredPassword);
-
         // 서버로 로그인 요청 보내기
         const response = await fetch(`${API_SERVER_DOMAIN}/user/login`, {
             method: 'POST',
@@ -59,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (response.ok) {
             // 로그인 성공 시 쿠키 설정
             const responseData = await response.json();
-            setCookie('userToken', responseData.token, 7); // 예시로 7일 동안 유효한 토큰 쿠키 설정
+            setCookie('userToken', responseData.token, 7);
             window.location.href = 'main.html';
         } else {
             // 로그인 실패 시

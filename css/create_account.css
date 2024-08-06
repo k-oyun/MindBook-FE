@@ -57,8 +57,8 @@
 }
 
 .create-account-message {
-    padding-bottom: 2%;
-    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-top: 2%;
 }
 
 .create-account-id-msg {
@@ -71,9 +71,38 @@
     width: 41vw;
     height: 8vh;
     border: 0;
-    color: #fff;
     border-radius: 10px;
     margin-left: 10%;
+}
+
+.create-account-authorize-input {
+    width: 41vw;
+    height: 8vh;
+    border: 0;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.email-authorize-btn {
+    background-color: #323047;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 7vw;
+    height: 6.5vh;
+    font-size: 1rem;
+    margin-left: -16.5%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.authorize-msg {
+    font-size: 1rem;
+    color: #999999;
+    border: none;
+    background-color: transparent;
+    margin-left: 10%;
+    cursor: pointer;
 }
 
 .error-create-id {
@@ -92,6 +121,7 @@
     font-size: 1rem;
     margin-left: -16.5%;
     margin-top: 2%;
+    cursor: pointer;
 }
 
 /* 닉네임 */
@@ -109,7 +139,6 @@
     width: 41vw;
     height: 8vh;
     border: 0;
-    color: #fff;
     border-radius: 10px;
     margin-left: 3%;
 }
@@ -142,7 +171,6 @@
     width: 41vw;
     height: 8vh;
     border: 0;
-    color: #fff;
     border-radius: 10px;
     margin-left: 3%;
     margin-top: -2%;
@@ -152,7 +180,6 @@
     width: 41vw;
     height: 8vh;
     border: 0;
-    color: #fff;
     border-radius: 10px;
     margin-top: 3%;
     margin-left: 3%;
