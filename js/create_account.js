@@ -211,14 +211,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 회원가입 완료 버튼 클릭 시 서버 요청
     createAccountButton.addEventListener('click', function () {
-        const email = emailInput.value;
-        const nickname = nicknameInput.value;
-        const password = passwordInput.value;
+        const email = emailInput.value.trim();
+        const nickname = nicknameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        // 요청 전 콘솔 로그 추가
+        console.log('Sending registration data:', {
+            nickName: nickname,
+            email: email,
+            password: password,
+        });
 
         // 비밀번호 검증
         if (!validatePasswords()) {
             return;
         }
+
+        // 요청 전 콘솔 로그 추가
+        console.log('Sending registration data:', {
+            nickName: nickname,
+            email: email,
+            password: password,
+        });
 
         fetch(`${API_SERVER_DOMAIN}/user/register`, {
             method: 'POST',
@@ -226,18 +240,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: email,
                 nickName: nickname,
+                email: email,
                 password: password,
             }),
         })
             .then((response) => {
+                console.log('Response Status:', response.status); // 응답 상태 코드 로그
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.text().then((text) => {
+                        throw new Error(`HTTP error! status: ${response.status}, message: ${text}`);
+                    });
                 }
                 return response.json();
             })
             .then((data) => {
+                console.log('Response Data:', data); // 응답 데이터 로그
                 if (data.success) {
                     // 회원가입 성공 시 로그인 페이지로 이동
                     createAccountModal.style.display = 'none';
@@ -248,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             })
             .catch((error) => {
-                console.error('Error:', error);
+                console.error('Error:', error); // 에러 로그
                 alert('회원가입 요청 처리 중 오류가 발생했습니다. 다시 시도해주세요.');
             });
     });
