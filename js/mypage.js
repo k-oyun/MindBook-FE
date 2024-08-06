@@ -1,12 +1,29 @@
 const BASE_URL = "http://3.38.119.114:8080";
 
 document.addEventListener("DOMContentLoaded", function () {
+    const accessToken = getCookie("userToken");
+
+    // 쿠키 가져오기 함수
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            while (cookie.charAt(0) === " ") {
+                cookie = cookie.substring(1, cookie.length);
+            }
+            if (cookie.indexOf(nameEQ) === 0) {
+                return cookie.substring(nameEQ.length, cookie.length);
+            }
+        }
+        return null;
+    }
+
     const createdAtGet = async () => {
         const url = `${BASE_URL}/user/createdAt`;
 
         const headers = {
-            Authorization:
-                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI5MzY4MzgsImV4cCI6MTcyMzEwOTYzOH0.tWj7EAlene-cMYlAbcHksglpeDDaPXQureU-ckDlHKw",
+            Authorization: `Bearer ${accessToken}`,
             "Content-Type": "application/json;charset=UTF-8",
         };
 
@@ -50,8 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const url = `${BASE_URL}/user/update`;
         const headers = {
-            Authorization:
-                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaGRiczEyMDhAbmF2ZXIuY29tIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MjI5MzY4MzgsImV4cCI6MTcyMzEwOTYzOH0.tWj7EAlene-cMYlAbcHksglpeDDaPXQureU-ckDlHKw",
+            Authorization: `Bearer ${accessToken}`,
             "Content-Type": "application/json;charset=UTF-8",
         };
 
