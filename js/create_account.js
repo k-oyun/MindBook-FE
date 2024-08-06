@@ -1,5 +1,5 @@
 var API_SERVER_DOMAIN = 'http://3.38.119.114:8080';
-
+let authorizationTimeout; // 전역으로 변수를 정의
 const accessToken = getCookie('accessToken');
 
 // 기존에 제공된 쿠키 설정 함수
@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('올바른 이메일 형식을 입력하세요.'); // 콘솔에 로그 남기기
             errorCreateId.textContent = '올바른 이메일 형식을 입력하세요.';
             errorCreateId.style.display = 'block';
-            errorCreateId.style.marginTop = '10px';
-            errorCreateId.style.marginBottom = '10px';
             createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
             return;
         }
@@ -82,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then((data) => {
                 // 이메일 중복 확인 성공
-                emailAuthorizeInput.style.display = 'block';
-                emailAuthorizeBtn.style.display = 'block';
+                // emailAuthorizeInput.style.display = 'block';
+                // emailAuthorizeBtn.style.display = 'block';
                 authorizeMsgBtn.style.display = 'block';
                 errorCreateId.style.display = 'none';
                 createAccountBtn.disabled = true;
@@ -93,8 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 authorizationTimeout = setTimeout(() => {
                     errorCreateId.textContent = '인증번호의 유효 시간이 만료되었습니다.';
                     errorCreateId.style.display = 'block';
-                    errorCreateId.style.marginTop = '10px';
-                    errorCreateId.style.marginBottom = '10px';
                     createAccountBtn.disabled = true;
                 }, 5 * 60 * 1000); // 5분
             })
@@ -102,8 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Error:', error.message); // 서버 오류를 콘솔에 로그로 남김
                 errorCreateId.textContent = '이메일 확인 중 오류가 발생했습니다.';
                 errorCreateId.style.display = 'block';
-                errorCreateId.style.marginTop = '10px';
-                errorCreateId.style.marginBottom = '10px';
                 createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
             });
     });
@@ -134,8 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     console.log('인증번호 확인 실패');
                     errorCreateId.textContent = '인증번호가 일치하지 않거나 이미 등록된 아이디입니다.';
                     errorCreateId.style.display = 'block';
-                    errorCreateId.style.marginTop = '10px';
-                    errorCreateId.style.marginBottom = '10px';
                     createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
                 } else {
                     throw new Error(`Unexpected response status: ${response.status}`);
@@ -145,8 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Error:', error.message); // 서버 오류를 콘솔에 로그로 남김
                 errorCreateId.textContent = '인증번호 확인 중 오류가 발생했습니다.';
                 errorCreateId.style.display = 'block';
-                errorCreateId.style.marginTop = '10px';
-                errorCreateId.style.marginBottom = '10px';
                 createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
             });
     });
@@ -171,8 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     authorizationTimeout = setTimeout(() => {
                         errorCreateId.textContent = '인증번호의 유효 시간이 만료되었습니다.';
                         errorCreateId.style.display = 'block';
-                        errorCreateId.style.marginTop = '10px';
-                        errorCreateId.style.marginBottom = '10px';
                         createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
                     }, 5 * 60 * 1000); // 5분
                 } else {
@@ -183,8 +171,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('Error:', error.message); // 서버 오류를 콘솔에 로그로 남김
                 errorCreateId.textContent = '인증번호 재발송 중 오류가 발생했습니다.';
                 errorCreateId.style.display = 'block';
-                errorCreateId.style.marginTop = '10px';
-                errorCreateId.style.marginBottom = '10px';
                 createAccountBtn.disabled = true; // 회원가입 버튼 비활성화
             });
     });
@@ -194,8 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const passwordConfirm = passwordConfirmInput.value;
 
         // 비밀번호 검증
-        const passwordPattern = /^(?!.*[\u3131-\uD79D])(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-        if (!passwordPattern.test(password)) {
+        const passwordPattern = password.length >= 8 && !/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/.test(password);
+        if (!passwordPattern) {
             errorCreatePw.textContent = '비밀번호는 한글 제외 8자 이상이어야 합니다.';
             errorCreatePw.style.display = 'block';
             return false;
