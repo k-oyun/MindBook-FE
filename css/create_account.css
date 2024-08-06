@@ -83,6 +83,10 @@
     margin-left: 10%;
 }
 
+.authorize-div {
+    height: 8vh;
+}
+
 .email-authorize-btn {
     background-color: #323047;
     color: #ffffff;
