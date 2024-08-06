@@ -1,53 +1,51 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .top-bar {
-  height: 100px;
-  left: 0;
-  right: 0;
-  display: flex;
-  background-color: transparent;
-  padding-bottom: 20px;
-  z-index: 1;
-
+    height: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: transparent;
+    padding-bottom: 20px;
+    z-index: 1;
 }
 
 .logo {
-  margin-right: 70px;
-  padding-left: 30px;
-  padding-top: 10px;
+    margin-right: 70px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 .nav-bar {
-  width: 400px;
-  height: 40px;
-  font-size: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 55px;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
 }
 
 .nav-bar a {
-  font-size: 24px;
-  color: #323047;
-  font-weight: 700;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .nav-icon {
-  display: flex;
-  margin-left: auto;
-  padding-right: 60px;
-  align-items: center;
+    display: flex;
+    margin-left: auto;
+    padding-right: 60px;
+    align-items: center;
 }
 
 .logout-button {
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .logout-button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }

@@ -5,10 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Comptible" content="IE=edge" />
         <meta name="viewport" content="width=deviec-width, inital-scale=1.0" />
-        <script
-            src="https://kit.fontawesome.com/8d049b55ed.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/8d049b55ed.js" crossorigin="anonymous"></script>
         <title>마음책방</title>
     </head>
     <body>
@@ -22,51 +19,28 @@
                 <span style="font-weight: 600">정확히</span> 입력해주세요.
             </p>
             <div class="create-account-main">
-                <div class="user-profile-img">
-                    <img
-                        class="user-profile-img-input"
-                        src="/img/profile_img.png"
-                    />
-                    <input
-                        type="file"
-                        id="open-file"
-                        accept=".jpg, .jpeg, .png"
-                        style="display: none"
-                    />
-                </div>
-                <div class="open-change-modal">
-                    <button type="button" id="open-change-modal-btn">
-                        <img src="/img/change_img.png" />
-                    </button>
-                </div>
-
                 <div class="create-account-id">
                     <div class="create-account-message">
                         <span class="create-account-id-msg">이메일</span>
                     </div>
                     <div>
-                        <input
-                            class="create-account-id-input"
-                            type="email"
-                            name="email"
-                        />
-                        <button class="email-submit-btn">중복확인</button>
+                        <input class="create-account-id-input" type="email" name="email" />
+                        <button class="email-submit-btn">인증받기</button>
+                    </div>
+                    <div>
+                        <input class="create-account-authorize-input" type="authorize" name="authorize" />
+                        <button class="email-authorize-btn">확인</button>
                     </div>
                     <div class="create-account-message">
-                        <p class="error-create-id">
-                            조건에 맞지 않는 아이디입니다.
-                        </p>
+                        <button class="authorize-msg" type="button">인증번호를 못받으셨나요? <u>다시받기</u></button>
+                        <p class="error-create-id">인증번호가 일치하지 않거나 이미 등록된 아이디입니다.</p>
                     </div>
                 </div>
                 <div class="create-account-nickname">
                     <div class="create-account-message">
                         <p class="create-account-nickname-msg">닉네임</p>
                     </div>
-                    <input
-                        class="create-account-nickname-input"
-                        type="text"
-                        name="userNickName"
-                    />
+                    <input class="create-account-nickname-input" type="text" name="userNickName" />
                     <div class="create-account-message">
                         <p class="alert-nickname">추후 변경 불가</p>
                     </div>
@@ -74,16 +48,10 @@
                 <div class="create-account-pw">
                     <div class="create-account-message">
                         <span class="create-account-pw-msg">비밀번호</span>
-                        <span class="create-account-pw-submsg"
-                            >한글 제외 8자 이상</span
-                        >
+                        <span class="create-account-pw-submsg">한글 제외 8자 이상</span>
                     </div>
                     <div>
-                        <input
-                            class="create-account-pw-input"
-                            type="password"
-                            name="userPassword"
-                        />
+                        <input class="create-account-pw-input" type="password" name="userPassword" />
                     </div>
                     <div>
                         <input
@@ -94,41 +62,23 @@
                         />
                     </div>
                     <div class="create-account-message">
-                        <p class="error-create-pw">
-                            조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지
-                            않습니다.
-                        </p>
+                        <p class="error-create-pw">조건에 맞지 않는 비밀번호이거나, 비밀번호가 일치하지 않습니다.</p>
                     </div>
                 </div>
                 <div>
-                    <input
-                        class="open-create-account-modal"
-                        type="button"
-                        value="회원가입"
-                        disabled
-                    />
+                    <input class="open-create-account-modal" type="button" value="회원가입" disabled />
                 </div>
             </div>
         </div>
         <!--이미지 변경 팝업창 -->
         <div id="choose-img-modal">
             <div class="choose-img-content">
-                <input
-                    type="button"
-                    id="change-img-button"
-                    value="파일에서 사진 선택"
-                />
+                <input type="button" id="change-img-button" value="파일에서 사진 선택" />
 
                 <div class="button-border">
-                    <input
-                        type="button"
-                        id="back-basic-img-button"
-                        value="기본이미지로 변경"
-                    />
+                    <input type="button" id="back-basic-img-button" value="기본이미지로 변경" />
                 </div>
-                <a href="create_account.html"
-                    ><input type="button" id="no-change-button" value="취소"
-                /></a>
+                <a href="create_account.html"><input type="button" id="no-change-button" value="취소" /></a>
             </div>
             <div class="choose-img-modal-back"></div>
         </div>
@@ -141,14 +91,11 @@
 
                 <p>회원가입이 완료되었습니다&#33;</p>
 
-                <a href="login.html"
-                    ><button type="button" id="create-account-button">
-                        로그인하기
-                    </button></a
-                >
+                <a href="login.html"><button type="button" id="create-account-button">로그인하기</button></a>
             </div>
 
             <div class="create-account-modal-back"></div>
         </div>
     </body>
+    <script src="/js/create_account.js"></script>
 </html>
