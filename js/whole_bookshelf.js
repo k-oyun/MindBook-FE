@@ -32,47 +32,61 @@ document.addEventListener("DOMContentLoaded", function () {
       const groupSize = 4;
       const WholeBooks = document.querySelector(".whole-books");
 
-      for (let i = 0; i < refinedData.length; i += groupSize) {
-        const group = refinedData.slice(i, i + groupSize);
+      if (refinedData.length === 0) {
         const bookInfoContainer = document.createElement("div");
         bookInfoContainer.className = "book-info-container";
 
-        group.forEach((book) => {
-          const bookInfoHTML = `
-              <div class="book-infos" data-id="${book.id}">
-                <a href="add_book_report.html" class="add_book_report_btn">
-                  <img class="book-img" src="${book.image}" alt="Book Image"/>
-                </a>
-                  <span class="book-names">${book.title}</span>
-                  <span class="book-author">| ${book.author}</span>
-                
-              </div>
-          
-          `;
-
-          bookInfoContainer.innerHTML += bookInfoHTML;
-        });
-
-        if (i + groupSize >= refinedData.length) {
-          const addButtonHTML = `
-          
-              <div class="book-infos">
-                  <button class="book-add-btn"></button>
-                      <a href='add_book_report.html' class= "move-to-add-book">
-                          <div class="book-add-btn-container">
-                          <img src="../img/plus_btn.png" class="book-add-btn-img" />
-                          </div>
-                      </a>
-                  </button>
-
-              </div>
-          
-              `;
-          bookInfoContainer.innerHTML += addButtonHTML;
-        }
+        const addButtonHTML = `
+    <div class="book-infos">
+      <a href='add_book.html' class="move-to-add-book">
+        <div class="book-add-btn-container">
+          <img src="../img/plus_btn.png" class="book-add-btn-img" />
+        </div>
+      </a>
+    </div>
+  `;
+        bookInfoContainer.innerHTML = addButtonHTML;
         WholeBooks.appendChild(bookInfoContainer);
+      } else {
+        for (let i = 0; i < refinedData.length; i += groupSize) {
+          const group = refinedData.slice(i, i + groupSize);
+          const bookInfoContainer = document.createElement("div");
+          bookInfoContainer.className = "book-info-container";
 
-        bookInfoContainer.querySelectorAll(".book-infos").forEach((element) => {
+          group.forEach((book) => {
+            const bookInfoHTML = `
+        <div class="book-infos" data-id="${book.id}">
+          <a href="add_book_report.html" class="add_book_report_btn">
+            <img class="book-img" src="${book.image}" alt="Book Image"/>
+          </a>
+          <span class="book-names">${book.title}</span>
+          <span class="book-author">| ${book.author}</span>
+        </div>
+      `;
+            bookInfoContainer.innerHTML += bookInfoHTML;
+          });
+
+          WholeBooks.appendChild(bookInfoContainer);
+
+          if (i + groupSize >= refinedData.length) {
+            const addButtonContainer = document.createElement("div");
+            addButtonContainer.className = "book-info-container";
+
+            const addButtonHTML = `
+        <div class="book-infos">
+          <a href='add_book.html' class="move-to-add-book">
+            <div class="book-add-btn-container">
+              <img src="../img/plus_btn.png" class="book-add-btn-img" />
+            </div>
+          </a>
+        </div>
+      `;
+            addButtonContainer.innerHTML = addButtonHTML;
+            WholeBooks.appendChild(addButtonContainer);
+          }
+        }
+
+        WholeBooks.querySelectorAll(".book-infos").forEach((element) => {
           element.addEventListener("click", function () {
             const bookId = element.getAttribute("data-id");
             const link = element.querySelector("a.add_book_report_btn");
