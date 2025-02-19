@@ -3,6 +3,12 @@
 <img src='https://github.com/user-attachments/assets/2d187b58-98fa-42a1-822f-a92d1f9b3e9b' />
 <br />
 
+#### MindBook은 우울감, 무기력함, 불안감, 의욕 상실을 겪는 현대인들을 위해 자기 치유와 자존감 회복을 목적으로 제공된 웹서비스입니다
+#### 사용자는 하루 동안 느낀 감정을 회고록에 기록하며 스스로를 돌아볼 수 있으며, 이를 통해 감정을 정리하고 자기 이해를 높일 수 있습니다. 
+#### 또한 다른 사용자들과 감정을 공유하고 공감과 위로를 주고받으며 정서적 유대감을 형성할 수 있습니다.
+
+<br />
+
 # 👥 팀 소개
 <img src='https://github.com/user-attachments/assets/61b003b8-6b76-4732-a9e4-acf9add70ab9'/>
 <br />
