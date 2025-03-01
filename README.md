@@ -31,14 +31,17 @@
 <br />
 
 # 📱 실행 화면
-<div style="display: flex; justify-content: center;">
-  <img src='https://github.com/user-attachments/assets/969e4456-7991-474e-8441-2b3ad7d6091b'/>
-  <img src='https://github.com/user-attachments/assets/51985c45-13d9-4de0-bffd-13a5cb0f5156'/>
-  <img src='https://github.com/user-attachments/assets/1ca45f2a-458c-4682-a0a3-834db4dd734c'/>
-  <img src='https://github.com/user-attachments/assets/e360e649-832c-4dd6-b3c0-bc2372a5d546'/>
-  <img src='https://github.com/user-attachments/assets/ec78b5cb-ad7a-4a1a-8cfe-bd73ed2beda7'/>
-  <img src='https://github.com/user-attachments/assets/a5af76b8-51d4-48f8-bfa2-37e695d0945a'/>
-</div>
+| ![Login](https://github.com/user-attachments/assets/1233bb97-43d1-4601-8a4d-942748cedb43) | ![Main](https://github.com/user-attachments/assets/969e4456-7991-474e-8441-2b3ad7d6091b) | 
+|:----------:|:----------:|
+| 로그인 페이지 | 메인 페이지 |
+| ![Report](https://github.com/user-attachments/assets/51985c45-13d9-4de0-bffd-13a5cb0f5156) | ![ReportComp](https://github.com/user-attachments/assets/1ca45f2a-458c-4682-a0a3-834db4dd734c) |
+| 독후감 작성 페이지 | 독후감 작성 완료 페이지 |
+| ![SearchBook](https://github.com/user-attachments/assets/e360e649-832c-4dd6-b3c0-bc2372a5d546) | ![SearchBookComp](https://github.com/user-attachments/assets/ec78b5cb-ad7a-4a1a-8cfe-bd73ed2beda7) |
+| 책 검색 페이지 | 책 검색 후 페이지 |
+| ![MemoirList](https://github.com/user-attachments/assets/f4eda212-a03c-4827-b838-08199291393a) | ![Memoir](https://github.com/user-attachments/assets/a5af76b8-51d4-48f8-bfa2-37e695d0945a) |
+| 회고록 리스트 페이지 | 회고록 페이지 |
+
+
 <br />
 
 # ‼️ 커밋 규칙
